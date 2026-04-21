@@ -8,25 +8,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body { font-family: system-ui, -apple-system, sans-serif; }
-    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
-    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
+    .card { transition: all 0.3s ease; }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4); }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
   <!-- Hero -->
-  <header class="hero-bg py-28 text-center">
-    <div class="max-w-6xl mx-auto px-6">
-      <h1 class="text-6xl font-bold tracking-tight">Apurupa Prathipati</h1>
-      <p class="text-3xl mt-3 text-blue-400">Senior Full Stack Developer</p>
-      <p class="mt-6 max-w-2xl mx-auto text-xl text-slate-400">
-        10+ years crafting scalable cloud-native applications with Java/Spring Boot, Angular/React, microservices, and enterprise cloud platforms
+  <header class="hero-bg py-32 text-center">
+    <div class="max-w-5xl mx-auto px-6">
+      <h1 class="text-7xl font-bold tracking-tighter">Apurupa Prathipati</h1>
+      <p class="mt-4 text-4xl text-blue-400 font-light">Senior Full Stack Developer</p>
+      <p class="mt-8 max-w-2xl mx-auto text-xl text-slate-300">
+        10+ years building enterprise-grade applications with <strong>Java/Spring Boot</strong>, modern frontends, microservices, and cloud platforms
       </p>
-      <div class="mt-10 flex justify-center gap-6">
-        <a href="mailto:apurupa810@gmail.com" class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-2xl font-semibold flex items-center gap-2">
-          <i class="fas fa-envelope"></i> Get In Touch
+      <div class="mt-12 flex justify-center gap-6">
+        <a href="mailto:apurupa810@gmail.com" class="bg-blue-600 hover:bg-blue-500 px-10 py-4 rounded-2xl font-medium text-lg flex items-center gap-3">
+          <i class="fas fa-envelope"></i> Contact Me
         </a>
-        <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="border border-slate-400 hover:border-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-2">
+        <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="border border-slate-400 hover:border-white px-10 py-4 rounded-2xl font-medium text-lg flex items-center gap-3">
           <i class="fab fa-linkedin"></i> LinkedIn
         </a>
       </div>
@@ -34,122 +35,131 @@
   </header>
 
   <!-- About -->
-  <section class="max-w-6xl mx-auto px-6 py-20">
+  <section class="max-w-5xl mx-auto px-6 py-20">
     <h2 class="text-4xl font-semibold text-center mb-10">About Me</h2>
     <div class="max-w-3xl mx-auto text-lg leading-relaxed text-slate-300">
-      Highly accomplished Senior Full Stack Developer with over 10 years of experience designing, developing, and modernizing large-scale enterprise applications across Banking, Payments, Retail, and Telecom. 
-      Expert in building cloud-native microservices using Java/Spring Boot, modern frontends (Angular 11–21 & React), event-driven architectures, Docker, Kubernetes (AKS), MuleSoft, and secure migrations.
+      Highly accomplished Senior Full Stack Developer with 10+ years of hands-on experience in designing, developing, deploying, and modernizing large-scale enterprise applications in Banking, Payments, Retail, and Telecom domains.
+      <br><br>
+      Deep expertise in <strong>Java/Spring Boot</strong> microservices, Angular/React frontends, event-driven architectures, Docker/Kubernetes, MuleSoft integrations, and secure cloud migrations (PCF → AKS).
     </div>
   </section>
 
   <!-- Skills -->
   <section class="bg-slate-900 py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-semibold text-center mb-12">Technical Expertise</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="bg-slate-800 p-6 rounded-3xl"><strong class="text-blue-400">Backend</strong><br>Java 8–17/25, Spring Boot, Spring Cloud, Hibernate, Mule 4, Groovy</div>
-        <div class="bg-slate-800 p-6 rounded-3xl"><strong class="text-blue-400">Frontend</strong><br>Angular (11→21), React.js, Redux, TypeScript, Storybook, Material UI</div>
-        <div class="bg-slate-800 p-6 rounded-3xl"><strong class="text-blue-400">Cloud & DevOps</strong><br>Azure AKS, AWS, Docker, Kubernetes, Helm, Jenkins, Azure DevOps</div>
-        <div class="bg-slate-800 p-6 rounded-3xl"><strong class="text-blue-400">Integration</strong><br>RabbitMQ, Kafka, MuleSoft Anypoint, REST/SOAP</div>
-        <div class="bg-slate-800 p-6 rounded-3xl"><strong class="text-blue-400">Security & Compliance</strong><br>OAuth2/OIDC, PCI, PII, SOC2</div>
-        <div class="bg-slate-800 p-6 rounded-3xl"><strong class="text-blue-400">Other</strong><br>Gradle, Adobe Analytics, Azure AI/ML Services</div>
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center mb-12">Core Technologies</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-slate-800 p-8 rounded-3xl">
+          <h3 class="text-xl font-semibold text-blue-400 mb-4">Backend & Java Stack</h3>
+          <p class="text-slate-300">Java 8–17/25, Spring Boot 4.x, Spring Cloud, Hibernate/JPA, Mule 4 / Anypoint Platform, Groovy</p>
+        </div>
+        <div class="bg-slate-800 p-8 rounded-3xl">
+          <h3 class="text-xl font-semibold text-blue-400 mb-4">Frontend</h3>
+          <p class="text-slate-300">Angular (11→21), React.js + Redux, TypeScript, Storybook, Material UI, Gatsby</p>
+        </div>
+        <div class="bg-slate-800 p-8 rounded-3xl">
+          <h3 class="text-xl font-semibold text-blue-400 mb-4">Cloud & DevOps</h3>
+          <p class="text-slate-300">Azure (AKS, AppInsights), AWS, Docker, Kubernetes, Helm, Jenkins, Azure DevOps, GitHub</p>
+        </div>
+        <div class="bg-slate-800 p-8 rounded-3xl">
+          <h3 class="text-xl font-semibold text-blue-400 mb-4">Messaging & Integration</h3>
+          <p class="text-slate-300">RabbitMQ, Kafka, SQS/SNS, REST/SOAP, MuleSoft Connectors</p>
+        </div>
+        <div class="bg-slate-800 p-8 rounded-3xl">
+          <h3 class="text-xl font-semibold text-blue-400 mb-4">Security & Compliance</h3>
+          <p class="text-slate-300">OAuth2/OIDC, JWT, PCI, PII, SOC2</p>
+        </div>
+        <div class="bg-slate-800 p-8 rounded-3xl">
+          <h3 class="text-xl font-semibold text-blue-400 mb-4">Other Tools</h3>
+          <p class="text-slate-300">Gradle/Maven, Postman, Splunk/Kibana, Azure AI/ML Services, Adobe Analytics</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Experience (Detailed) -->
-  <section class="max-w-6xl mx-auto px-6 py-20">
-    <h2 class="text-4xl font-semibold text-center mb-12">Professional Experience</h2>
+  <!-- Detailed Experience -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-semibold text-center mb-12">Experience</h2>
 
     <div class="space-y-16">
-      <!-- Navy Federal -->
-      <div class="bg-slate-900 p-8 rounded-3xl card-hover">
-        <div class="flex justify-between items-start">
+      <div class="bg-slate-900 p-10 rounded-3xl card">
+        <div class="flex justify-between">
           <div>
             <h3 class="text-2xl font-semibold">Senior Full Stack Developer</h3>
-            <p class="text-blue-400">Navy Federal Credit Union • Apr 2021 – Present</p>
+            <p class="text-blue-400">Navy Federal Credit Union — Apr 2021 – Present</p>
           </div>
-          <span class="text-slate-400">Vienna, VA</span>
+          <p class="text-slate-400">Vienna, VA</p>
         </div>
-        <ul class="mt-6 space-y-3 text-slate-300 list-disc pl-6">
-          <li>Led migration of mission-critical claims platform from Pivotal Cloud Foundry (PCF) to Azure Kubernetes Service (AKS)</li>
-          <li>Designed and developed MuleSoft APIs (Mule 4.10) for claims disputes, alerts, and member services workflows</li>
-          <li>Built event-driven Spring Boot microservices with RabbitMQ, OAuth2/OIDC, and idempotent processing</li>
-          <li>Ensured PCI, PII, SOC2 compliance and provided L3 production support</li>
+        <ul class="mt-6 space-y-4 text-slate-300 list-disc pl-6">
+          <li>Led migration of mission-critical claims platform from Pivotal Cloud Foundry (PCF) to Azure Kubernetes Service (AKS) using Docker, Helm, and secure networking</li>
+          <li>Designed and developed scalable MuleSoft APIs (Mule 4.10) for claims disputes, alerts, and member services with DataWeave transformations</li>
+          <li>Built event-driven Spring Boot microservices with RabbitMQ, OAuth2/OIDC, idempotent consumers, and dead-letter queues</li>
+          <li>Ensured full PCI/PII/SOC2 compliance and provided L3 production support with RCA and monitoring enhancements</li>
         </ul>
       </div>
 
-      <!-- Little Caesars -->
-      <div class="bg-slate-900 p-8 rounded-3xl card-hover">
-        <div class="flex justify-between items-start">
+      <div class="bg-slate-900 p-10 rounded-3xl card">
+        <div class="flex justify-between">
           <div>
             <h3 class="text-2xl font-semibold">Full Stack Developer</h3>
-            <p class="text-blue-400">Little Caesars • Sep 2020 – Mar 2021</p>
+            <p class="text-blue-400">Little Caesars — Sep 2020 – Mar 2021</p>
           </div>
-          <span class="text-slate-400">Detroit, MI</span>
+          <p class="text-slate-400">Detroit, MI</p>
         </div>
-        <ul class="mt-6 space-y-3 text-slate-300 list-disc pl-6">
-          <li>Developed reusable React components using Storybook, Gatsby + GraphQL</li>
-          <li>Managed multi-package monorepo with Lerna and enforced Test-Driven Development (Jest)</li>
-          <li>Built responsive UIs with Styled Components and Rebass</li>
+        <ul class="mt-6 space-y-4 text-slate-300 list-disc pl-6">
+          <li>Developed reusable React components in Storybook and built statically generated apps with Gatsby + GraphQL</li>
+          <li>Managed multi-package monorepo using Lerna and enforced Test-Driven Development (Jest)</li>
+          <li>Created responsive UIs with Styled Components, Rebass, and modern React Hooks</li>
         </ul>
       </div>
 
-      <!-- American Express -->
-      <div class="bg-slate-900 p-8 rounded-3xl card-hover">
-        <div class="flex justify-between items-start">
+      <div class="bg-slate-900 p-10 rounded-3xl card">
+        <div class="flex justify-between">
           <div>
             <h3 class="text-2xl font-semibold">Full Stack Developer</h3>
-            <p class="text-blue-400">American Express • May 2018 – Aug 2020</p>
+            <p class="text-blue-400">American Express — May 2018 – Aug 2020</p>
           </div>
-          <span class="text-slate-400">New York, NY</span>
+          <p class="text-slate-400">New York, NY</p>
         </div>
-        <ul class="mt-6 space-y-3 text-slate-300 list-disc pl-6">
-          <li>Built interactive React dashboards for credit card transactions, disputes, and payments</li>
-          <li>Implemented Node.js Backend-for-Frontend (BFF) layer with Express.js</li>
-          <li>Optimized performance using React Suspense and code-splitting</li>
+        <ul class="mt-6 space-y-4 text-slate-300 list-disc pl-6">
+          <li>Built interactive React dashboards for credit card transactions, statements, disputes, and payments</li>
+          <li>Implemented Node.js Backend-for-Frontend (BFF) layer with Express.js for simplified API consumption</li>
+          <li>Optimized performance with React Suspense, code-splitting, and client-side caching</li>
         </ul>
       </div>
 
-      <!-- Cox -->
-      <div class="bg-slate-900 p-8 rounded-3xl card-hover">
-        <div class="flex justify-between items-start">
+      <div class="bg-slate-900 p-10 rounded-3xl card">
+        <div class="flex justify-between">
           <div>
             <h3 class="text-2xl font-semibold">Full Stack Developer</h3>
-            <p class="text-blue-400">Cox Communications • Jun 2013 – Dec 2015</p>
+            <p class="text-blue-400">Cox Communications — Jun 2013 – Dec 2015</p>
           </div>
-          <span class="text-slate-400">India</span>
+          <p class="text-slate-400">India</p>
         </div>
-        <ul class="mt-6 space-y-3 text-slate-300 list-disc pl-6">
-          <li>Developed Angular single-page applications and Spring MVC backend for telecom billing/customer systems</li>
-          <li>Built REST/SOAP services and complex PL/SQL procedures</li>
+        <ul class="mt-6 space-y-4 text-slate-300 list-disc pl-6">
+          <li>Developed Angular single-page applications and Spring MVC backend for telecom billing and customer management systems</li>
+          <li>Built REST/SOAP services, complex PL/SQL procedures, and automated testing with Selenium/Jasmine</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Education -->
-  <section class="bg-slate-900 py-20">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-semibold mb-8">Education</h2>
-      <div class="inline-block bg-slate-800 px-12 py-8 rounded-3xl">
-        <p class="text-xl font-semibold">M.S. Computer Information Systems</p>
-        <p>New England College, Henniker, NH — 2018</p>
-        <p class="mt-8 text-xl font-semibold">B.S. Computer Science</p>
-        <p>Jawaharlal Nehru Technological University, Hyderabad, India — 2014</p>
+  <!-- Education & Contact -->
+  <footer class="bg-black py-16 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-semibold mb-8">Education</h2>
+      <p class="text-xl">M.S. Computer Information Systems — New England College (2018)</p>
+      <p class="text-xl mt-4">B.S. Computer Science — JNTU Hyderabad (2014)</p>
+
+      <div class="mt-16">
+        <p class="text-2xl mb-6">Ready for new challenges?</p>
+        <p class="text-lg">apurupa810@gmail.com | 734-278-7599 | Livonia, MI</p>
+        <div class="flex justify-center gap-10 mt-10 text-4xl">
+          <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/apurupa810" target="_blank" class="hover:text-slate-300"><i class="fab fa-github"></i></a>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-black py-12 text-center text-slate-400">
-    <p class="text-2xl mb-4">Let's connect for opportunities</p>
-    <p>apurupa810@gmail.com | 734-278-7599 | Livonia, MI</p>
-    <div class="flex justify-center gap-8 mt-8 text-4xl">
-      <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank"><i class="fab fa-linkedin hover:text-blue-400"></i></a>
-      <a href="https://github.com/apurupa810" target="_blank"><i class="fab fa-github hover:text-slate-300"></i></a>
-    </div>
-    <p class="mt-12 text-sm">© 2026 Apurupa Prathipati • Modern Portfolio</p>
   </footer>
 </body>
 </html>
