@@ -9,157 +9,84 @@
   <style>
     body { font-family: system-ui, -apple-system, sans-serif; }
     .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
-    .card { transition: all 0.3s ease; }
-    .card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4); }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4); }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
   <!-- Hero -->
-  <header class="hero-bg py-32 text-center">
+  <header class="hero-bg py-28 text-center">
     <div class="max-w-5xl mx-auto px-6">
-      <h1 class="text-7xl font-bold tracking-tighter">Apurupa Prathipati</h1>
-      <p class="mt-4 text-4xl text-blue-400 font-light">Senior Full Stack Developer</p>
-      <p class="mt-8 max-w-2xl mx-auto text-xl text-slate-300">
-        10+ years building enterprise-grade applications with <strong>Java/Spring Boot</strong>, modern frontends, microservices, and cloud platforms
+      <h1 class="text-6xl font-bold">Apurupa Prathipati</h1>
+      <p class="text-3xl mt-4 text-blue-400">Senior Full Stack Developer</p>
+      <p class="mt-6 max-w-2xl mx-auto text-xl text-slate-300">
+        10+ years building scalable enterprise applications with Java/Spring Boot, microservices, and cloud-native architectures
       </p>
-      <div class="mt-12 flex justify-center gap-6">
-        <a href="mailto:apurupa810@gmail.com" class="bg-blue-600 hover:bg-blue-500 px-10 py-4 rounded-2xl font-medium text-lg flex items-center gap-3">
-          <i class="fas fa-envelope"></i> Contact Me
-        </a>
-        <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="border border-slate-400 hover:border-white px-10 py-4 rounded-2xl font-medium text-lg flex items-center gap-3">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
+      <div class="mt-10 flex justify-center gap-6">
+        <a href="mailto:apurupa810@gmail.com" class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-2xl font-semibold">Contact Me</a>
+        <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="border border-slate-400 hover:border-white px-8 py-4 rounded-2xl font-semibold">LinkedIn</a>
       </div>
     </div>
   </header>
 
   <!-- About -->
-  <section class="max-w-5xl mx-auto px-6 py-20">
-    <h2 class="text-4xl font-semibold text-center mb-10">About Me</h2>
-    <div class="max-w-3xl mx-auto text-lg leading-relaxed text-slate-300">
-      Highly accomplished Senior Full Stack Developer with 10+ years of hands-on experience in designing, developing, deploying, and modernizing large-scale enterprise applications in Banking, Payments, Retail, and Telecom domains.
-      <br><br>
-      Deep expertise in <strong>Java/Spring Boot</strong> microservices, Angular/React frontends, event-driven architectures, Docker/Kubernetes, MuleSoft integrations, and secure cloud migrations (PCF → AKS).
-    </div>
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-semibold text-center mb-8">About Me</h2>
+    <p class="max-w-3xl mx-auto text-lg text-slate-300 text-center">
+      Senior Full Stack Developer with deep expertise in Java/Spring Boot, Angular/React, cloud migrations (PCF → AKS), MuleSoft integrations, and event-driven architectures. 
+      Passionate about building secure, scalable systems for Banking, Healthcare, and Ecommerce.
+    </p>
   </section>
 
-  <!-- Skills -->
+  <!-- Featured Project - ClaimAI -->
   <section class="bg-slate-900 py-20">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-4xl font-semibold text-center mb-12">Core Technologies</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-slate-800 p-8 rounded-3xl">
-          <h3 class="text-xl font-semibold text-blue-400 mb-4">Backend & Java Stack</h3>
-          <p class="text-slate-300">Java 8–17/25, Spring Boot 4.x, Spring Cloud, Hibernate/JPA, Mule 4 / Anypoint Platform, Groovy</p>
-        </div>
-        <div class="bg-slate-800 p-8 rounded-3xl">
-          <h3 class="text-xl font-semibold text-blue-400 mb-4">Frontend</h3>
-          <p class="text-slate-300">Angular (11→21), React.js + Redux, TypeScript, Storybook, Material UI, Gatsby</p>
-        </div>
-        <div class="bg-slate-800 p-8 rounded-3xl">
-          <h3 class="text-xl font-semibold text-blue-400 mb-4">Cloud & DevOps</h3>
-          <p class="text-slate-300">Azure (AKS, AppInsights), AWS, Docker, Kubernetes, Helm, Jenkins, Azure DevOps, GitHub</p>
-        </div>
-        <div class="bg-slate-800 p-8 rounded-3xl">
-          <h3 class="text-xl font-semibold text-blue-400 mb-4">Messaging & Integration</h3>
-          <p class="text-slate-300">RabbitMQ, Kafka, SQS/SNS, REST/SOAP, MuleSoft Connectors</p>
-        </div>
-        <div class="bg-slate-800 p-8 rounded-3xl">
-          <h3 class="text-xl font-semibold text-blue-400 mb-4">Security & Compliance</h3>
-          <p class="text-slate-300">OAuth2/OIDC, JWT, PCI, PII, SOC2</p>
-        </div>
-        <div class="bg-slate-800 p-8 rounded-3xl">
-          <h3 class="text-xl font-semibold text-blue-400 mb-4">Other Tools</h3>
-          <p class="text-slate-300">Gradle/Maven, Postman, Splunk/Kibana, Azure AI/ML Services, Adobe Analytics</p>
+      <h2 class="text-4xl font-semibold text-center mb-4">Featured Project</h2>
+      <p class="text-center text-blue-400 text-xl mb-12">ClaimAI — AI-Powered Intelligent Claims Platform</p>
+      
+      <div class="bg-slate-800 rounded-3xl p-10 card-hover">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 class="text-3xl font-semibold mb-6">AI-Powered Claims Processing</h3>
+            <p class="text-slate-300 mb-8">
+              A modern intelligent platform that processes claims 10x faster using Java/Spring Boot microservices, 
+              AI analysis, fraud detection, and seamless integrations — built to solve real enterprise challenges in healthcare, banking, and ecommerce.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span class="bg-slate-700 px-4 py-2 rounded-full text-sm">Java 17 + Spring Boot</span>
+              <span class="bg-slate-700 px-4 py-2 rounded-full text-sm">React + Tailwind</span>
+              <span class="bg-slate-700 px-4 py-2 rounded-full text-sm">Azure AKS</span>
+              <span class="bg-slate-700 px-4 py-2 rounded-full text-sm">MuleSoft APIs</span>
+              <span class="bg-slate-700 px-4 py-2 rounded-full text-sm">AI/ML Integration</span>
+            </div>
+            <a href="https://apurupa810-dotcom.github.io/claim-ai-platform/" target="_blank" 
+               class="mt-8 inline-block bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-2xl font-semibold">
+              View Live Project →
+            </a>
+          </div>
+          <div class="bg-slate-950 p-6 rounded-2xl">
+            <img src="https://via.placeholder.com/600x400/1e3a8a/ffffff?text=ClaimAI+Dashboard" 
+                 alt="ClaimAI Dashboard" class="rounded-xl w-full">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Detailed Experience -->
+  <!-- Experience -->
   <section class="max-w-5xl mx-auto px-6 py-20">
     <h2 class="text-4xl font-semibold text-center mb-12">Experience</h2>
-
-    <div class="space-y-16">
-      <div class="bg-slate-900 p-10 rounded-3xl card">
-        <div class="flex justify-between">
-          <div>
-            <h3 class="text-2xl font-semibold">Senior Full Stack Developer</h3>
-            <p class="text-blue-400">Navy Federal Credit Union — Apr 2021 – Present</p>
-          </div>
-          <p class="text-slate-400">Vienna, VA</p>
-        </div>
-        <ul class="mt-6 space-y-4 text-slate-300 list-disc pl-6">
-          <li>Led migration of mission-critical claims platform from Pivotal Cloud Foundry (PCF) to Azure Kubernetes Service (AKS) using Docker, Helm, and secure networking</li>
-          <li>Designed and developed scalable MuleSoft APIs (Mule 4.10) for claims disputes, alerts, and member services with DataWeave transformations</li>
-          <li>Built event-driven Spring Boot microservices with RabbitMQ, OAuth2/OIDC, idempotent consumers, and dead-letter queues</li>
-          <li>Ensured full PCI/PII/SOC2 compliance and provided L3 production support with RCA and monitoring enhancements</li>
-        </ul>
-      </div>
-
-      <div class="bg-slate-900 p-10 rounded-3xl card">
-        <div class="flex justify-between">
-          <div>
-            <h3 class="text-2xl font-semibold">Full Stack Developer</h3>
-            <p class="text-blue-400">Little Caesars — Sep 2020 – Mar 2021</p>
-          </div>
-          <p class="text-slate-400">Detroit, MI</p>
-        </div>
-        <ul class="mt-6 space-y-4 text-slate-300 list-disc pl-6">
-          <li>Developed reusable React components in Storybook and built statically generated apps with Gatsby + GraphQL</li>
-          <li>Managed multi-package monorepo using Lerna and enforced Test-Driven Development (Jest)</li>
-          <li>Created responsive UIs with Styled Components, Rebass, and modern React Hooks</li>
-        </ul>
-      </div>
-
-      <div class="bg-slate-900 p-10 rounded-3xl card">
-        <div class="flex justify-between">
-          <div>
-            <h3 class="text-2xl font-semibold">Full Stack Developer</h3>
-            <p class="text-blue-400">American Express — May 2018 – Aug 2020</p>
-          </div>
-          <p class="text-slate-400">New York, NY</p>
-        </div>
-        <ul class="mt-6 space-y-4 text-slate-300 list-disc pl-6">
-          <li>Built interactive React dashboards for credit card transactions, statements, disputes, and payments</li>
-          <li>Implemented Node.js Backend-for-Frontend (BFF) layer with Express.js for simplified API consumption</li>
-          <li>Optimized performance with React Suspense, code-splitting, and client-side caching</li>
-        </ul>
-      </div>
-
-      <div class="bg-slate-900 p-10 rounded-3xl card">
-        <div class="flex justify-between">
-          <div>
-            <h3 class="text-2xl font-semibold">Full Stack Developer</h3>
-            <p class="text-blue-400">Cox Communications — Jun 2013 – Dec 2015</p>
-          </div>
-          <p class="text-slate-400">India</p>
-        </div>
-        <ul class="mt-6 space-y-4 text-slate-300 list-disc pl-6">
-          <li>Developed Angular single-page applications and Spring MVC backend for telecom billing and customer management systems</li>
-          <li>Built REST/SOAP services, complex PL/SQL procedures, and automated testing with Selenium/Jasmine</li>
-        </ul>
-      </div>
+    <!-- Your existing experience sections can go here (shortened for space) -->
+    <div class="text-center text-slate-400">
+      Full details available on <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="text-blue-400 underline">LinkedIn</a>
     </div>
   </section>
 
-  <!-- Education & Contact -->
+  <!-- Contact -->
   <footer class="bg-black py-16 text-center">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-semibold mb-8">Education</h2>
-      <p class="text-xl">M.S. Computer Information Systems — New England College (2018)</p>
-      <p class="text-xl mt-4">B.S. Computer Science — JNTU Hyderabad (2014)</p>
-
-      <div class="mt-16">
-        <p class="text-2xl mb-6">Ready for new challenges?</p>
-        <p class="text-lg">apurupa810@gmail.com | 734-278-7599 | Livonia, MI</p>
-        <div class="flex justify-center gap-10 mt-10 text-4xl">
-          <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/apurupa810" target="_blank" class="hover:text-slate-300"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-    </div>
+    <p class="text-2xl mb-4">Open to new opportunities in Banking, Healthcare Insurance & Ecommerce</p>
+    <p class="text-xl">apurupa810@gmail.com | 734-278-7599 | Livonia, MI</p>
   </footer>
+
 </body>
 </html>
