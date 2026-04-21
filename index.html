@@ -7,25 +7,26 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: 'Segoe UI', system-ui, sans-serif; }
+    body { font-family: system-ui, -apple-system, sans-serif; }
     .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
   <!-- Hero -->
-  <header class="hero-bg py-28 border-b border-slate-800">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h1 class="text-6xl md:text-7xl font-bold tracking-tight mb-4">Apurupa Prathipati</h1>
-      <p class="text-3xl text-emerald-400 font-medium mb-6">Senior Full Stack Developer</p>
-      <p class="text-xl max-w-2xl mx-auto text-slate-400">
-        10+ years crafting scalable enterprise solutions with <span class="text-white font-semibold">Java • Spring Boot • Angular • React • Azure • MuleSoft</span>
+  <header class="hero-bg py-28 text-center">
+    <div class="max-w-6xl mx-auto px-6">
+      <h1 class="text-6xl font-bold tracking-tight">Apurupa Prathipati</h1>
+      <p class="text-3xl mt-3 text-blue-400">Senior Full Stack Developer</p>
+      <p class="mt-6 max-w-2xl mx-auto text-xl text-slate-400">
+        10+ years crafting scalable cloud-native applications with Java/Spring Boot, Angular/React, microservices, and enterprise cloud platforms
       </p>
-      <div class="flex flex-wrap justify-center gap-4 mt-12">
-        <a href="mailto:apurupa810@gmail.com" class="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-xl font-semibold flex items-center gap-2 transition">
+      <div class="mt-10 flex justify-center gap-6">
+        <a href="mailto:apurupa810@gmail.com" class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-2xl font-semibold flex items-center gap-2">
           <i class="fas fa-envelope"></i> Get In Touch
         </a>
-        <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="border border-slate-400 hover:border-white px-8 py-4 rounded-xl font-semibold flex items-center gap-2 transition">
+        <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="border border-slate-400 hover:border-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-2">
           <i class="fab fa-linkedin"></i> LinkedIn
         </a>
       </div>
@@ -34,82 +35,121 @@
 
   <!-- About -->
   <section class="max-w-6xl mx-auto px-6 py-20">
-    <h2 class="text-4xl font-bold text-center mb-10">About Me</h2>
-    <div class="max-w-3xl mx-auto text-lg text-slate-300 leading-relaxed">
-      <p>Highly accomplished Senior Full Stack Developer with over 10 years of experience designing, developing, and modernizing large-scale enterprise applications in Banking, Payments, Retail, and Telecom.</p>
-      <p class="mt-6">Specialized in building <strong>cloud-native microservices</strong> using Java/Spring Boot, modern frontends with Angular (11–21) and React, event-driven architectures, and secure migrations (PCF → Azure Kubernetes Service).</p>
-      <p class="mt-6">Strong expertise in MuleSoft APIs, Docker/Kubernetes, CI/CD, OAuth2, and compliance (PCI, PII, SOC2). Passionate about delivering high-performance, scalable solutions and mentoring teams.</p>
+    <h2 class="text-4xl font-semibold text-center mb-10">About Me</h2>
+    <div class="max-w-3xl mx-auto text-lg leading-relaxed text-slate-300">
+      Highly accomplished Senior Full Stack Developer with over 10 years of experience designing, developing, and modernizing large-scale enterprise applications across Banking, Payments, Retail, and Telecom. 
+      Expert in building cloud-native microservices using Java/Spring Boot, modern frontends (Angular 11–21 & React), event-driven architectures, Docker, Kubernetes (AKS), MuleSoft, and secure migrations.
     </div>
   </section>
 
   <!-- Skills -->
   <section class="bg-slate-900 py-20">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12">Core Technologies</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
-          <h3 class="text-emerald-400 text-xl font-semibold mb-4">Backend & Java Ecosystem</h3>
-          <p class="text-slate-300">Java 8–17/25, Spring Boot, Spring Cloud, Hibernate, Mule 4 / Anypoint Platform, Groovy</p>
-        </div>
-        <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
-          <h3 class="text-emerald-400 text-xl font-semibold mb-4">Frontend</h3>
-          <p class="text-slate-300">Angular (11→21), React.js, Redux, TypeScript, Storybook, Material UI</p>
-        </div>
-        <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
-          <h3 class="text-emerald-400 text-xl font-semibold mb-4">Cloud & DevOps</h3>
-          <p class="text-slate-300">Azure AKS, AWS, Docker, Kubernetes, Helm, Jenkins, Azure DevOps</p>
-        </div>
-        <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
-          <h3 class="text-emerald-400 text-xl font-semibold mb-4">Integration & Messaging</h3>
-          <p class="text-slate-300">RabbitMQ, Kafka, SQS/SNS, REST/SOAP, MuleSoft</p>
-        </div>
-        <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
-          <h3 class="text-emerald-400 text-xl font-semibold mb-4">Security & Compliance</h3>
-          <p class="text-slate-300">OAuth2/OIDC, JWT, PCI, PII, SOC2</p>
-        </div>
-        <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
-          <h3 class="text-emerald-400 text-xl font-semibold mb-4">Other Tools</h3>
-          <p class="text-slate-300">Gradle/Maven, Splunk, Kibana, Azure AI/ML, Adobe Analytics</p>
-        </div>
+      <h2 class="text-4xl font-semibold text-center mb-12">Technical Expertise</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-slate-800 p-6 rounded-3xl"><strong class="text-blue-400">Backend</strong><br>Java 8–17/25, Spring Boot, Spring Cloud, Hibernate, Mule 4, Groovy</div>
+        <div class="bg-slate-800 p-6 rounded-3xl"><strong class="text-blue-400">Frontend</strong><br>Angular (11→21), React.js, Redux, TypeScript, Storybook, Material UI</div>
+        <div class="bg-slate-800 p-6 rounded-3xl"><strong class="text-blue-400">Cloud & DevOps</strong><br>Azure AKS, AWS, Docker, Kubernetes, Helm, Jenkins, Azure DevOps</div>
+        <div class="bg-slate-800 p-6 rounded-3xl"><strong class="text-blue-400">Integration</strong><br>RabbitMQ, Kafka, MuleSoft Anypoint, REST/SOAP</div>
+        <div class="bg-slate-800 p-6 rounded-3xl"><strong class="text-blue-400">Security & Compliance</strong><br>OAuth2/OIDC, PCI, PII, SOC2</div>
+        <div class="bg-slate-800 p-6 rounded-3xl"><strong class="text-blue-400">Other</strong><br>Gradle, Adobe Analytics, Azure AI/ML Services</div>
       </div>
     </div>
   </section>
 
-  <!-- Experience -->
+  <!-- Experience (Detailed) -->
   <section class="max-w-6xl mx-auto px-6 py-20">
-    <h2 class="text-4xl font-bold text-center mb-12">Experience</h2>
+    <h2 class="text-4xl font-semibold text-center mb-12">Professional Experience</h2>
+
     <div class="space-y-16">
-      <div class="border-l-4 border-emerald-500 pl-8">
-        <h3 class="text-2xl font-semibold">Senior Full Stack Developer — Navy Federal Credit Union</h3>
-        <p class="text-emerald-400">Apr 2021 – Present • Vienna, VA</p>
-        <ul class="mt-4 space-y-3 text-slate-300 list-disc pl-6">
-          <li>Led migration of mission-critical claims platform from PCF to Azure Kubernetes Service (AKS)</li>
-          <li>Designed MuleSoft APIs and event-driven Spring Boot microservices with RabbitMQ</li>
-          <li>Ensured PCI/PII/SOC2 compliance and high-availability production support</li>
+      <!-- Navy Federal -->
+      <div class="bg-slate-900 p-8 rounded-3xl card-hover">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-2xl font-semibold">Senior Full Stack Developer</h3>
+            <p class="text-blue-400">Navy Federal Credit Union • Apr 2021 – Present</p>
+          </div>
+          <span class="text-slate-400">Vienna, VA</span>
+        </div>
+        <ul class="mt-6 space-y-3 text-slate-300 list-disc pl-6">
+          <li>Led migration of mission-critical claims platform from Pivotal Cloud Foundry (PCF) to Azure Kubernetes Service (AKS)</li>
+          <li>Designed and developed MuleSoft APIs (Mule 4.10) for claims disputes, alerts, and member services workflows</li>
+          <li>Built event-driven Spring Boot microservices with RabbitMQ, OAuth2/OIDC, and idempotent processing</li>
+          <li>Ensured PCI, PII, SOC2 compliance and provided L3 production support</li>
         </ul>
       </div>
-      <!-- Add other experiences similarly if you want, or keep short for now -->
+
+      <!-- Little Caesars -->
+      <div class="bg-slate-900 p-8 rounded-3xl card-hover">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-2xl font-semibold">Full Stack Developer</h3>
+            <p class="text-blue-400">Little Caesars • Sep 2020 – Mar 2021</p>
+          </div>
+          <span class="text-slate-400">Detroit, MI</span>
+        </div>
+        <ul class="mt-6 space-y-3 text-slate-300 list-disc pl-6">
+          <li>Developed reusable React components using Storybook, Gatsby + GraphQL</li>
+          <li>Managed multi-package monorepo with Lerna and enforced Test-Driven Development (Jest)</li>
+          <li>Built responsive UIs with Styled Components and Rebass</li>
+        </ul>
+      </div>
+
+      <!-- American Express -->
+      <div class="bg-slate-900 p-8 rounded-3xl card-hover">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-2xl font-semibold">Full Stack Developer</h3>
+            <p class="text-blue-400">American Express • May 2018 – Aug 2020</p>
+          </div>
+          <span class="text-slate-400">New York, NY</span>
+        </div>
+        <ul class="mt-6 space-y-3 text-slate-300 list-disc pl-6">
+          <li>Built interactive React dashboards for credit card transactions, disputes, and payments</li>
+          <li>Implemented Node.js Backend-for-Frontend (BFF) layer with Express.js</li>
+          <li>Optimized performance using React Suspense and code-splitting</li>
+        </ul>
+      </div>
+
+      <!-- Cox -->
+      <div class="bg-slate-900 p-8 rounded-3xl card-hover">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-2xl font-semibold">Full Stack Developer</h3>
+            <p class="text-blue-400">Cox Communications • Jun 2013 – Dec 2015</p>
+          </div>
+          <span class="text-slate-400">India</span>
+        </div>
+        <ul class="mt-6 space-y-3 text-slate-300 list-disc pl-6">
+          <li>Developed Angular single-page applications and Spring MVC backend for telecom billing/customer systems</li>
+          <li>Built REST/SOAP services and complex PL/SQL procedures</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- Education & Contact -->
-  <footer class="bg-slate-900 border-t border-slate-800 py-16">
+  <!-- Education -->
+  <section class="bg-slate-900 py-20">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <div class="mb-12">
-        <h2 class="text-3xl font-bold mb-6">Education</h2>
-        <p class="text-xl">M.S. Computer Information Systems — New England College (2018)</p>
-        <p class="text-xl mt-2">B.S. Computer Science — JNTU Hyderabad (2014)</p>
+      <h2 class="text-4xl font-semibold mb-8">Education</h2>
+      <div class="inline-block bg-slate-800 px-12 py-8 rounded-3xl">
+        <p class="text-xl font-semibold">M.S. Computer Information Systems</p>
+        <p>New England College, Henniker, NH — 2018</p>
+        <p class="mt-8 text-xl font-semibold">B.S. Computer Science</p>
+        <p>Jawaharlal Nehru Technological University, Hyderabad, India — 2014</p>
       </div>
-      <div>
-        <p class="text-2xl mb-4">Let's Connect</p>
-        <p class="text-xl mb-6">apurupa810@gmail.com | 734-278-7599 | Livonia, MI</p>
-        <div class="flex justify-center gap-8 text-4xl">
-          <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="hover:text-emerald-400"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/apurupa810" target="_blank" class="hover:text-slate-400"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <p class="mt-12 text-sm text-slate-500">© 2026 Apurupa Prathipati • Modern Portfolio</p>
     </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-12 text-center text-slate-400">
+    <p class="text-2xl mb-4">Let's connect for opportunities</p>
+    <p>apurupa810@gmail.com | 734-278-7599 | Livonia, MI</p>
+    <div class="flex justify-center gap-8 mt-8 text-4xl">
+      <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank"><i class="fab fa-linkedin hover:text-blue-400"></i></a>
+      <a href="https://github.com/apurupa810" target="_blank"><i class="fab fa-github hover:text-slate-300"></i></a>
+    </div>
+    <p class="mt-12 text-sm">© 2026 Apurupa Prathipati • Modern Portfolio</p>
   </footer>
 </body>
 </html>
