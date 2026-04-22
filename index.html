@@ -8,8 +8,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body { font-family: system-ui, -apple-system, sans-serif; }
-    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
-    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4); }
+    .hero-bg { 
+      background: linear-gradient(135deg, #0a1428 0%, #1e2937 100%); 
+    }
+    .accent-teal { color: #14b8a6; }
+    .card-hover:hover { 
+      transform: translateY(-8px); 
+      box-shadow: 0 25px 50px -12px rgb(20 184 166 / 0.3); 
+    }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
@@ -17,14 +23,14 @@
   <!-- Hero -->
   <header class="hero-bg py-28 text-center">
     <div class="max-w-5xl mx-auto px-6">
-      <h1 class="text-6xl font-bold">Apurupa Prathipati</h1>
-      <p class="text-3xl mt-4 text-blue-400">Senior Full Stack Developer</p>
+      <h1 class="text-6xl font-bold tracking-tighter">Apurupa Prathipati</h1>
+      <p class="text-3xl mt-4 accent-teal">Senior Full Stack Developer</p>
       <p class="mt-6 max-w-2xl mx-auto text-xl text-slate-300">
-        10+ years building scalable enterprise applications with Java/Spring Boot, microservices, and cloud-native architectures
+        10+ years building scalable cloud-native enterprise applications in Banking, Payments, and Telecom
       </p>
       <div class="mt-10 flex justify-center gap-6">
-        <a href="mailto:apurupa810@gmail.com" class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-2xl font-semibold">Contact Me</a>
-        <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="border border-slate-400 hover:border-white px-8 py-4 rounded-2xl font-semibold">LinkedIn</a>
+        <a href="mailto:apurupa810@gmail.com" class="bg-teal-600 hover:bg-teal-500 px-8 py-4 rounded-2xl font-semibold transition">Contact Me</a>
+        <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="border border-slate-400 hover:border-teal-400 px-8 py-4 rounded-2xl font-semibold transition">LinkedIn</a>
       </div>
     </div>
   </header>
@@ -33,16 +39,16 @@
   <section class="max-w-5xl mx-auto px-6 py-16">
     <h2 class="text-4xl font-semibold text-center mb-8">About Me</h2>
     <p class="max-w-3xl mx-auto text-lg text-slate-300 text-center">
-      Senior Full Stack Developer with deep expertise in Java/Spring Boot, Angular/React, cloud migrations (PCF → AKS), MuleSoft integrations, and event-driven architectures. 
-      Passionate about building secure, scalable systems for Banking, Healthcare, and Ecommerce.
+      Highly accomplished Senior Full Stack Developer with over 10 years of experience designing, developing, and modernizing large-scale enterprise applications. 
+      Expertise in Java/Spring Boot microservices, modern frontends (Angular/React), cloud migrations, MuleSoft integrations, and AI-enhanced solutions.
     </p>
   </section>
 
-  <!-- Featured Project - ClaimAI -->
+  <!-- Featured Project: ClaimAI -->
   <section class="bg-slate-900 py-20">
     <div class="max-w-5xl mx-auto px-6">
       <h2 class="text-4xl font-semibold text-center mb-4">Featured Project</h2>
-      <p class="text-center text-blue-400 text-xl mb-12">ClaimAI — AI-Powered Intelligent Claims Platform</p>
+      <p class="text-center text-teal-400 text-xl mb-12">ClaimAI — AI-Powered Intelligent Claims Platform</p>
       
       <div class="bg-slate-800 rounded-3xl p-10 card-hover">
         <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -50,9 +56,9 @@
             <h3 class="text-3xl font-semibold mb-6">AI-Powered Claims Processing</h3>
             <p class="text-slate-300 mb-8">
               A modern intelligent platform that processes claims 10x faster using Java/Spring Boot microservices, 
-              AI analysis, fraud detection, and seamless integrations — built to solve real enterprise challenges in healthcare, banking, and ecommerce.
+              AI analysis, fraud detection, and seamless integrations — built for healthcare, banking, and ecommerce.
             </p>
-            <div class="flex flex-wrap gap-3">
+            <div class="flex flex-wrap gap-3 mb-8">
               <span class="bg-slate-700 px-4 py-2 rounded-full text-sm">Java 17 + Spring Boot</span>
               <span class="bg-slate-700 px-4 py-2 rounded-full text-sm">React + Tailwind</span>
               <span class="bg-slate-700 px-4 py-2 rounded-full text-sm">Azure AKS</span>
@@ -60,13 +66,14 @@
               <span class="bg-slate-700 px-4 py-2 rounded-full text-sm">AI/ML Integration</span>
             </div>
             <a href="https://apurupa810-dotcom.github.io/claim-ai-platform/" target="_blank" 
-               class="mt-8 inline-block bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-2xl font-semibold">
+               class="inline-block bg-teal-600 hover:bg-teal-500 px-8 py-4 rounded-2xl font-semibold text-white">
               View Live Project →
             </a>
           </div>
           <div class="bg-slate-950 p-6 rounded-2xl">
-            <img src="https://via.placeholder.com/600x400/1e3a8a/ffffff?text=ClaimAI+Dashboard" 
-                 alt="ClaimAI Dashboard" class="rounded-xl w-full">
+            <div class="bg-gradient-to-br from-teal-500 to-cyan-500 h-80 rounded-xl flex items-center justify-center text-white text-2xl font-light">
+              ClaimAI Dashboard
+            </div>
           </div>
         </div>
       </div>
@@ -76,9 +83,8 @@
   <!-- Experience -->
   <section class="max-w-5xl mx-auto px-6 py-20">
     <h2 class="text-4xl font-semibold text-center mb-12">Experience</h2>
-    <!-- Your existing experience sections can go here (shortened for space) -->
     <div class="text-center text-slate-400">
-      Full details available on <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="text-blue-400 underline">LinkedIn</a>
+      Full details available on <a href="https://www.linkedin.com/in/rupa-p-75b502178/" target="_blank" class="text-teal-400 underline">LinkedIn</a>
     </div>
   </section>
 
