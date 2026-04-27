@@ -2,7 +2,7 @@
 
 ![Portfolio](https://apurupa810-dotcom.github.io/apurupa-portfolio/)
 
-## 🚀 Live Portfolio
+## Live Portfolio
 **https://apurupa810-dotcom.github.io/apurupa-portfolio/**
 
 ## About Me
@@ -54,4 +54,4 @@ A modern **polyglot full-stack** platform demonstrating real-world enterprise sk
 
 **Open to new opportunities** in Banking, Healthcare Insurance, and Ecommerce domains.
 
-Built with ❤️ using React + Tailwind + GitHub Pages
+Built with love using React + Tailwind + GitHub Pages
