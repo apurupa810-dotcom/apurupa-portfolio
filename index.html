@@ -7,28 +7,25 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: 'Inter', system-ui, sans-serif; }
-    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #312e81 100%); }
-    .glow { box-shadow: 0 0 40px rgba(45, 212, 191, 0.5); }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
+    .glow { box-shadow: 0 0 40px rgba(45, 212, 191, 0.4); }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
-  <!-- HERO -->
+  <!-- Hero -->
   <header class="hero-bg min-h-screen flex items-center">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h1 class="text-7xl md:text-8xl font-bold tracking-tighter mb-6">
-        Apurupa Prathipati
-      </h1>
-      <p class="text-4xl text-teal-400 mb-8">Senior Full Stack Engineer</p>
-      <p class="max-w-2xl mx-auto text-xl text-slate-300 mb-12">
-        10+ years turning complex problems into elegant, scalable solutions.<br>
-        Currently building <strong>AI-powered claims systems</strong> with React, Java & Python.
+      <h1 class="text-7xl font-bold tracking-tighter">Apurupa Prathipati</h1>
+      <p class="text-4xl mt-4 text-teal-400">Senior Full Stack Engineer</p>
+      <p class="mt-8 text-xl max-w-2xl mx-auto text-slate-300">
+        10+ years building scalable enterprise systems<br>
+        Currently obsessed with AI-powered claims platforms
       </p>
-      <div class="flex justify-center gap-6">
+      <div class="mt-12 flex justify-center gap-6 flex-wrap">
         <a href="https://apurupa810-dotcom.github.io/claim-ai-frontend/" target="_blank"
-           class="px-10 py-5 bg-teal-500 hover:bg-teal-400 text-black font-semibold rounded-2xl text-lg transition">
-          See ClaimAI Live Demo →
+           class="px-10 py-5 bg-teal-500 hover:bg-teal-400 text-black font-semibold rounded-2xl text-lg transition flex items-center gap-3">
+          <i class="fas fa-play"></i> Experience ClaimAI Live Demo
         </a>
         <a href="resume.pdf" target="_blank"
            class="px-10 py-5 border border-teal-400 hover:bg-teal-400 hover:text-black font-semibold rounded-2xl text-lg transition flex items-center gap-3">
@@ -38,31 +35,31 @@
     </div>
   </header>
 
-  <!-- FEATURED PROJECT -->
+  <!-- Featured Project -->
   <section class="py-24 bg-slate-900">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-5xl font-bold text-center mb-4">Featured Masterpiece</h2>
       <p class="text-teal-400 text-center text-2xl mb-16">ClaimAI — Multi-Agent AI Claims Orchestra</p>
       
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="space-y-8">
-          <div class="flex gap-6">
-            <div class="w-16 h-16 bg-teal-500/10 rounded-2xl flex items-center justify-center text-4xl">🤖</div>
-            <div>
-              <h3 class="text-2xl font-semibold">4 AI Agents Working Together</h3>
-              <p class="text-slate-400">Intake • Fraud • Policy • Validation</p>
-            </div>
-          </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center bg-slate-800 rounded-3xl p-12 glow">
+        <div class="space-y-6">
           <p class="text-lg text-slate-300">
-            A complete polyglot platform (React + Java Spring Boot + Python) that processes insurance claims intelligently using multi-agent collaboration.
+            A complete <strong>polyglot full-stack platform</strong> where React frontend, Java Spring Boot backend, 
+            and Python AI agents work together intelligently.
           </p>
+          <ul class="space-y-3 text-slate-400">
+            <li>✅ React 19 + Hooks + Tailwind</li>
+            <li>✅ Java 17 + Spring Boot Microservices</li>
+            <li>✅ Python FastAPI Multi-Agent System</li>
+            <li>✅ Docker + docker-compose</li>
+          </ul>
           <a href="https://apurupa810-dotcom.github.io/claim-ai-frontend/" target="_blank"
-             class="inline-block bg-white text-black px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition">
-            Experience the Live Demo →
+             class="inline-block bg-white text-black px-10 py-4 rounded-2xl font-semibold hover:scale-105 transition">
+            See Live Demo →
           </a>
         </div>
-        <div class="bg-slate-800 rounded-3xl p-8 glow">
-          <div class="bg-gradient-to-br from-teal-400 to-cyan-400 h-96 rounded-2xl flex items-center justify-center text-3xl font-light text-black">
+        <div class="bg-slate-950 rounded-2xl p-8 text-center">
+          <div class="bg-gradient-to-br from-teal-400 to-cyan-400 h-96 rounded-2xl flex items-center justify-center text-black text-3xl font-light">
             ClaimAI Dashboard
           </div>
         </div>
@@ -70,22 +67,10 @@
     </div>
   </section>
 
-  <!-- RESUME DOWNLOAD -->
-  <section class="py-20 text-center bg-black">
-    <div class="max-w-md mx-auto">
-      <h2 class="text-4xl font-bold mb-8">Want to know more?</h2>
-      <a href="resume.pdf" target="_blank"
-         class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-400 to-cyan-400 text-black px-12 py-6 rounded-3xl text-2xl font-semibold hover:scale-105 transition">
-        <i class="fas fa-file-pdf"></i>
-        Download Full Resume (PDF)
-      </a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="py-12 text-center text-slate-400">
-    <p>Built with passion • Open to Senior Full Stack / Solutions Architect roles</p>
-    <p class="mt-4">apurupa810@gmail.com | 734-278-7599 | Livonia, MI</p>
+  <!-- Footer -->
+  <footer class="py-16 text-center text-slate-400">
+    <p>apurupa810@gmail.com • 734-278-7599 • Livonia, Michigan</p>
+    <p class="mt-4 text-sm">Open to Senior Full Stack & Solutions Architect opportunities</p>
   </footer>
 
 </body>
