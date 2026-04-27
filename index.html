@@ -6,72 +6,43 @@
   <title>Apurupa Prathipati | Senior Full Stack Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
-    .glow { box-shadow: 0 0 40px rgba(45, 212, 191, 0.4); }
-  </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
   <!-- Hero -->
-  <header class="hero-bg min-h-screen flex items-center">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h1 class="text-7xl font-bold tracking-tighter">Apurupa Prathipati</h1>
+  <header class="bg-gradient-to-br from-indigo-950 to-violet-950 py-32 text-center">
+    <div class="max-w-5xl mx-auto px-6">
+      <h1 class="text-7xl font-bold">Apurupa Prathipati</h1>
       <p class="text-4xl mt-4 text-teal-400">Senior Full Stack Engineer</p>
-      <p class="mt-8 text-xl max-w-2xl mx-auto text-slate-300">
-        10+ years building scalable enterprise systems<br>
-        Currently obsessed with AI-powered claims platforms
-      </p>
-      <div class="mt-12 flex justify-center gap-6 flex-wrap">
+      <div class="mt-12">
         <a href="https://apurupa810-dotcom.github.io/claim-ai-frontend/" target="_blank"
-           class="px-10 py-5 bg-teal-500 hover:bg-teal-400 text-black font-semibold rounded-2xl text-lg transition flex items-center gap-3">
-          <i class="fas fa-play"></i> Experience ClaimAI Live Demo
+           class="inline-block bg-teal-500 hover:bg-teal-400 px-10 py-5 rounded-2xl font-semibold text-lg mr-4">
+          Live Demo
         </a>
-        <a href="resume.pdf" target="_blank"
-           class="px-10 py-5 border border-teal-400 hover:bg-teal-400 hover:text-black font-semibold rounded-2xl text-lg transition flex items-center gap-3">
-          <i class="fas fa-download"></i> Download Resume
+        <a href="#video" 
+           class="inline-block border border-teal-400 hover:bg-teal-400 hover:text-black px-10 py-5 rounded-2xl font-semibold text-lg">
+          Watch Project Video
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Featured Project -->
-  <section class="py-24 bg-slate-900">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-4">Featured Masterpiece</h2>
-      <p class="text-teal-400 text-center text-2xl mb-16">ClaimAI — Multi-Agent AI Claims Orchestra</p>
-      
-      <div class="grid md:grid-cols-2 gap-12 items-center bg-slate-800 rounded-3xl p-12 glow">
-        <div class="space-y-6">
-          <p class="text-lg text-slate-300">
-            A complete <strong>polyglot full-stack platform</strong> where React frontend, Java Spring Boot backend, 
-            and Python AI agents work together intelligently.
-          </p>
-          <ul class="space-y-3 text-slate-400">
-            <li>✅ React 19 + Hooks + Tailwind</li>
-            <li>✅ Java 17 + Spring Boot Microservices</li>
-            <li>✅ Python FastAPI Multi-Agent System</li>
-            <li>✅ Docker + docker-compose</li>
-          </ul>
-          <a href="https://apurupa810-dotcom.github.io/claim-ai-frontend/" target="_blank"
-             class="inline-block bg-white text-black px-10 py-4 rounded-2xl font-semibold hover:scale-105 transition">
-            See Live Demo →
-          </a>
-        </div>
-        <div class="bg-slate-950 rounded-2xl p-8 text-center">
-          <div class="bg-gradient-to-br from-teal-400 to-cyan-400 h-96 rounded-2xl flex items-center justify-center text-black text-3xl font-light">
-            ClaimAI Dashboard
-          </div>
-        </div>
+  <!-- Video Section -->
+  <section id="video" class="py-20 bg-slate-900">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-semibold mb-8">ClaimAI Project Demo Video</h2>
+      <div class="aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl">
+        <iframe width="100%" height="100%" 
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" 
+          title="ClaimAI Demo" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
       </div>
+      <p class="mt-6 text-slate-400">Watch how the Multi-Agent AI system works</p>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="py-16 text-center text-slate-400">
-    <p>apurupa810@gmail.com • 734-278-7599 • Livonia, Michigan</p>
-    <p class="mt-4 text-sm">Open to Senior Full Stack & Solutions Architect opportunities</p>
-  </footer>
 
 </body>
 </html>
