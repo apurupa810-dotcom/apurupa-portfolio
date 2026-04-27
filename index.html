@@ -10,37 +10,53 @@
 <body class="bg-slate-950 text-slate-200">
 
   <!-- Hero -->
-  <header class="bg-gradient-to-br from-indigo-950 to-violet-950 py-32 text-center">
+  <header class="bg-gradient-to-br from-indigo-950 to-violet-950 py-28 text-center">
     <div class="max-w-5xl mx-auto px-6">
-      <h1 class="text-7xl font-bold">Apurupa Prathipati</h1>
+      <h1 class="text-7xl font-bold tracking-tighter">Apurupa Prathipati</h1>
       <p class="text-4xl mt-4 text-teal-400">Senior Full Stack Engineer</p>
-      <div class="mt-12">
-        <a href="#demo" 
-           class="inline-block bg-teal-500 hover:bg-teal-400 text-black px-10 py-5 rounded-2xl font-semibold text-lg">
-          Watch ClaimAI Demo Video →
-        </a>
-      </div>
+      <p class="mt-6 text-xl text-slate-300">Building intelligent systems with React, Java & Python</p>
     </div>
   </header>
 
-  <!-- Demo Video Section -->
-  <section id="demo" class="py-20 bg-slate-900">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-semibold mb-8">ClaimAI Demo Video</h2>
-      <p class="text-slate-400 mb-8">Watch how the Multi-Agent AI system works</p>
-      
-      <div class="aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl">
-        <video controls class="w-full h-full">
-          <source src="Storyboard 2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+  <!-- Featured Project + Video -->
+  <section class="py-20 bg-slate-900">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center mb-4">Featured Project</h2>
+      <p class="text-teal-400 text-center text-2xl mb-12">ClaimAI — Multi-Agent AI Claims Orchestra</p>
+
+      <div class="bg-slate-800 rounded-3xl p-8 md:p-12">
+        <h3 class="text-2xl font-semibold mb-6 text-center">Watch Project Demo</h3>
+        
+        <!-- Video Player -->
+        <div class="aspect-video bg-black rounded-2xl overflow-hidden mb-8">
+          <video controls class="w-full h-full rounded-2xl" poster="">
+            <source src="Storyboard 2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="https://apurupa810-dotcom.github.io/claim-ai-frontend/" target="_blank"
+             class="bg-teal-600 hover:bg-teal-500 px-8 py-4 rounded-2xl font-semibold">
+            Try Live Demo →
+          </a>
+          <a href="https://github.com/apurupa810-dotcom/claim-ai-frontend" target="_blank"
+             class="border border-slate-400 hover:border-teal-400 px-8 py-4 rounded-2xl font-semibold">
+            Frontend Repo
+          </a>
+          <a href="https://github.com/apurupa810-dotcom/claim-ai-backend" target="_blank"
+             class="border border-slate-400 hover:border-teal-400 px-8 py-4 rounded-2xl font-semibold">
+            Backend Repo
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-12 text-center text-slate-400">
-    <p>apurupa810@gmail.com | Livonia, MI</p>
+  <footer class="py-16 text-center text-slate-400">
+    <p>apurupa810@gmail.com | 734-278-7599 | Livonia, MI</p>
+    <p class="mt-4">Open to Senior Full Stack opportunities</p>
   </footer>
 
 </body>
