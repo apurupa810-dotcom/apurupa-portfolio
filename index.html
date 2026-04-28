@@ -10,55 +10,68 @@
 <body class="bg-slate-950 text-slate-200">
 
   <!-- Hero -->
-  <header class="bg-gradient-to-br from-pink-950 to-purple-950 py-32 text-center">
+  <header class="bg-gradient-to-br from-pink-950 via-purple-950 to-slate-950 py-32 text-center">
     <div class="max-w-5xl mx-auto px-6">
-      <h1 class="text-7xl font-bold">Apurupa Prathipati</h1>
+      <h1 class="text-7xl font-bold tracking-tighter">Apurupa Prathipati</h1>
       <p class="text-4xl mt-4 text-pink-400">Senior Full Stack Engineer</p>
-      <p class="mt-6 text-xl text-slate-300">Building intelligent systems with React, Java & Python</p>
+      <p class="mt-8 max-w-2xl mx-auto text-xl text-slate-300">
+        10+ years delivering scalable enterprise applications in Banking, Insurance & Telecom<br>
+        Specialized in Java • React • Python • Cloud Migrations
+      </p>
+      <div class="mt-12 flex justify-center gap-6 flex-wrap">
+        <a href="https://apurupa810-dotcom.github.io/claim-ai-frontend/" target="_blank" 
+           class="px-10 py-5 bg-pink-600 hover:bg-pink-500 text-white font-semibold rounded-2xl text-lg transition">
+          Watch ClaimAI Demo Video →
+        </a>
+        <a href="resume.pdf" target="_blank" 
+           class="px-10 py-5 border border-pink-400 hover:bg-pink-400 hover:text-black font-semibold rounded-2xl text-lg transition flex items-center gap-3">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
     </div>
   </header>
 
-  <!-- Featured Project + Video -->
+  <!-- ClaimAI Project -->
   <section class="py-20 bg-slate-900">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-4xl font-semibold text-center mb-4">Featured Project</h2>
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-4">Featured Project</h2>
       <p class="text-pink-400 text-center text-2xl mb-12">ClaimAI — Multi-Agent AI Claims Orchestra</p>
 
-      <div class="bg-slate-800 rounded-3xl p-8 md:p-12">
-        <!-- Video Embed -->
-        <div class="aspect-video bg-black rounded-2xl overflow-hidden mb-8">
-          <video controls class="w-full h-full rounded-2xl" poster="">
-            <source src="Storyboard 4 (1).mp4" type="video/mp4">
-            Your browser does not support the video tag.
+      <div class="bg-slate-800 rounded-3xl p-12">
+        <div class="aspect-video bg-black rounded-2xl overflow-hidden mb-10">
+          <video controls class="w-full h-full" poster="">
+            <source src="Storyboard 2.mp4" type="video/mp4">
           </video>
         </div>
 
-        <p class="text-center text-slate-400 mb-8">Watch how the Multi-Agent system works</p>
-
-        <div class="flex flex-wrap gap-4 justify-center">
-          <a href="https://apurupa810-dotcom.github.io/claim-ai-frontend/" target="_blank"
-             class="bg-pink-600 hover:bg-pink-500 px-8 py-4 rounded-2xl font-semibold">
-            Live Interactive Demo →
-          </a>
-          <a href="resume.pdf" target="_blank"
-             class="border border-pink-400 hover:bg-pink-400 hover:text-black px-8 py-4 rounded-2xl font-semibold flex items-center gap-2">
-            <i class="fas fa-download"></i> Download Resume
-          </a>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div>
+            <h3 class="text-pink-400 font-semibold">Frontend</h3>
+            <p class="text-slate-400">React 19 + Hooks + Tailwind</p>
+          </div>
+          <div>
+            <h3 class="text-pink-400 font-semibold">Backend</h3>
+            <p class="text-slate-400">Java 17 + Spring Boot 3</p>
+          </div>
+          <div>
+            <h3 class="text-pink-400 font-semibold">AI Layer</h3>
+            <p class="text-slate-400">Python FastAPI + Multi-Agent System</p>
+          </div>
         </div>
 
-        <!-- Repo Links -->
-        <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <a href="https://github.com/apurupa810-dotcom/claim-ai-frontend" target="_blank" class="bg-slate-700 hover:bg-slate-600 p-4 rounded-2xl text-sm">Frontend (React)</a>
-          <a href="https://github.com/apurupa810-dotcom/claim-ai-backend" target="_blank" class="bg-slate-700 hover:bg-slate-600 p-4 rounded-2xl text-sm">Backend (Java)</a>
-          <a href="https://github.com/apurupa810-dotcom/claim-ai-ai-service" target="_blank" class="bg-slate-700 hover:bg-slate-600 p-4 rounded-2xl text-sm">AI Service (Python)</a>
-          <a href="https://github.com/apurupa810-dotcom/claim-ai-frontend" target="_blank" class="bg-slate-700 hover:bg-slate-600 p-4 rounded-2xl text-sm">Full Project</a>
+        <div class="mt-12 text-center">
+          <a href="https://github.com/apurupa810-dotcom/claim-ai-frontend" target="_blank" class="text-pink-400 hover:text-pink-300 underline">
+            View All Repositories →
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="py-12 text-center text-slate-400">
+  <!-- Footer -->
+  <footer class="py-16 text-center text-slate-400">
     <p>apurupa810@gmail.com | 734-278-7599 | Livonia, Michigan</p>
+    <p class="mt-4 text-sm">Open to Senior Full Stack / Cloud / AI Integration roles</p>
   </footer>
 
 </body>
