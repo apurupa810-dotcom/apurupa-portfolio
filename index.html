@@ -1,152 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Projects -->
-<section id="projects" class="py-20">
-  <div class="mx-auto max-w-6xl px-6">
-    <p
-      class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400"
-    >
-      Projects
-    </p>
+  <meta
+    name="description"
+    content="Apurupa Prathipati — Senior Java Full Stack and Backend Developer. Explore my experience, technical skills, and ClaimAI full-stack project."
+  />
 
-    <h2 class="mt-3 text-4xl font-bold text-white">
-      Featured project
-    </h2>
+  <title>Apurupa Prathipati | Senior Full Stack Developer</title>
 
-    <article
-      class="mt-10 rounded-3xl border border-slate-800 bg-slate-900 p-6 md:p-8"
-    >
-      <p class="text-sm font-semibold text-cyan-400">
-        Full-Stack Development · AI Integration
-      </p>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #020617;
+      --surface: #0f172a;
+      --border: #263449;
+      --text: #e2e8f0;
+      --muted: #a8b5c9;
+      --accent: #22d3ee;
+    }
 
-      <h3 class="mt-3 text-3xl font-bold text-white">
-        ClaimAI
-      </h3>
+    * {
+      box-sizing: border-box;
+    }
 
-      <p class="mt-3 text-xl text-slate-200">
-        Multi-Agent AI Claims Processing Platform
-      </p>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 110px;
+    }
 
-      <p class="mt-4 max-w-3xl leading-7 text-slate-300">
-        A full-stack demonstration project combining a React frontend,
-        Java Spring Boot backend, and Python FastAPI service with four
-        specialized AI agents.
-      </p>
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
 
-      <!-- Technology stack -->
-      <div class="mt-6 flex flex-wrap gap-2">
-        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
-          React 19
-        </span>
-        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
-          Tailwind CSS
-        </span>
-        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
-          Java 17
-        </span>
-        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
-          Spring Boot
-        </span>
-        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
-          Python
-        </span>
-        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
-          FastAPI
-        </span>
-        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
-          Docker
-        </span>
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 5px;
+    }
+
+    h1, h2, h3, h4, p {
+      margin-top: 0;
+    }
+
+    h1, h2, h3, h4 {
+      color: #fff;
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      letter-spacing: -0.05em;
+    }
+
+    h2 {
+      margin-bottom: 24px;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      letter-spacing: -0.03em;
+    }
+
+    h3 {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+    }
+
+    h4 {
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin-bottom: 18px;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding-block: 88px;
+    }
+
+    .alternate {
+      background: var(--surface);
+    }
+
+    .eyebrow {
+      margin-bottom: 14px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .section-intro {
+      max-width: 700px;
+      margin-bottom: 36px;
+      color: var(--muted);
+    }
+
+    .navigation {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--border);
+      background: rgba(2, 6, 23, 0.96);
+      backdrop-filter: blur(14px);
+    }
+
+    .navigation-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding-block: 18px;
+    }
+
+    .brand {
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover,
+    .contact-links a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding-block: 110px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at top left, #083344 0, transparent 55%),
+        radial-gradient(ellipse at bottom right, #1e1b4b 0, transparent 55%);
+    }
+
+    .hero-description {
+      max-width: 760px;
+      margin: 0 auto 20px;
+      color: #cbd5e1;
+      font-size: 1.2rem;
+    }
+
+    .hero-stack {
+      max-width: 850px;
+      margin: 0 auto 20px;
+      color: var(--muted);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .hero .actions,
+    .contact .actions {
+      justify-content: center;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 22px;
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      color: var(--accent);
+      font-weight: 700;
+      transition: background 150ms, color 150ms;
+    }
+
+    .button:hover {
+      background: var(--accent);
+      color: var(--background);
+    }
+
+    .button-primary {
+      background: var(--accent);
+      color: var(--background);
+    }
+
+    .button-primary:hover {
+      background: #67e8f9;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 28px;
+      margin-top: 30px;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 48px;
+    }
+
+    .about-copy {
+      color: #cbd5e1;
+      font-size: 1.05rem;
+    }
+
+    .highlights {
+      border-block: 1px solid var(--border);
+      background: var(--surface);
+      padding-block: 36px;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .highlight,
+    .card,
+    .experience-card,
+    .project-card,
+    .repository {
+      border: 1px solid var(--border);
+      border-radius: 20px;
+    }
+
+    .highlight {
+      padding: 24px;
+      background: var(--background);
+    }
+
+    .highlight strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--accent);
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    .highlight span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 26px;
+      background: var(--surface);
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .experience-list {
+      display: grid;
+      gap: 26px;
+    }
+
+    .experience-card {
+      padding: 32px;
+      background: var(--background);
+    }
+
+    .experience-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .role {
+      margin-bottom: 6px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .location,
+    .dates {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .dates {
+      flex-shrink: 0;
+    }
+
+    .project-name {
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .details {
+      margin-bottom: 0;
+      padding-left: 22px;
+      color: #cbd5e1;
+    }
+
+    .details li + li {
+      margin-top: 10px;
+    }
+
+    .project-card {
+      padding: 36px;
+      background:
+        linear-gradient(135deg, rgba(8, 51, 68, 0.35), transparent 65%),
+        var(--surface);
+    }
+
+    .project-card > h3 {
+      font-size: 2rem;
+    }
+
+    .project-subtitle {
+      color: #e2e8f0;
+      font-size: 1.15rem;
+    }
+
+    .project-description {
+      max-width: 840px;
+      color: var(--muted);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-block: 24px;
+    }
+
+    .tag {
+      padding: 5px 12px;
+      border: 1px solid #334155;
+      border-radius: 999px;
+      background: #172236;
+      color: #a5f3fc;
+      font-size: 0.8rem;
+    }
+
+    .architecture {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .architecture-item {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--background);
+    }
+
+    .architecture-item p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .project-card h4 {
+      margin-top: 32px;
+    }
+
+    .architecture-item h4 {
+      margin-top: 0;
+    }
+
+    .repository-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .repository {
+      display: block;
+      padding: 22px;
+      background: var(--background);
+      transition: border-color 150ms;
+    }
+
+    .repository:hover {
+      border-color: var(--accent);
+    }
+
+    .repository strong {
+      display: block;
+      color: var(--accent);
+    }
+
+    .repository span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .education-grid p + p {
+      margin-top: 10px;
+    }
+
+    .contact {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      background:
+        radial-gradient(ellipse at bottom, #083344 0, transparent 70%);
+    }
+
+    .contact-description {
+      max-width: 680px;
+      margin-inline: auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    footer {
+      padding: 28px 20px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    footer p {
+      margin-bottom: 0;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 20px;
+      z-index: 20;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: var(--background);
+    }
+
+    .skip-link:focus {
+      top: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .highlight-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .section {
+        padding-block: 60px;
+      }
+
+      .hero {
+        padding-block: 70px;
+      }
+
+      .navigation-inner {
+        flex-direction: column;
+        gap: 8px;
+        padding-block: 12px;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 8px 14px;
+        font-size: 0.8rem;
+      }
+
+      .skills-grid,
+      .architecture,
+      .repository-grid,
+      .education-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .experience-heading {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .experience-card,
+      .project-card {
+        padding: 24px;
+      }
+
+      .highlight {
+        padding: 18px;
+      }
+
+      .highlight strong {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      * {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Navigation -->
+  <nav class="navigation" aria-label="Main navigation">
+    <div class="container navigation-inner">
+      <a href="#home" class="brand" aria-label="Apurupa Prathipati home">
+        AP<span style="color: var(--accent)">.</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
       </div>
+    </div>
+  </nav>
 
-      <!-- Architecture -->
-      <h4 class="mt-8 text-lg font-semibold text-white">
-        Architecture
-      </h4>
+  <main id="main">
+    <!-- Hero -->
+    <header id="home" class="hero">
+      <div class="container">
+        <p class="eyebrow">
+          Senior Java Full Stack &amp; Backend Developer
+        </p>
 
-      <ul class="mt-3 list-disc space-y-2 pl-5 leading-7 text-slate-300">
-        <li>
-          <strong class="text-white">Frontend:</strong>
-          React and Tailwind CSS for the user interface.
-        </li>
-        <li>
-          <strong class="text-white">Backend:</strong>
-          Java Spring Boot for API orchestration.
-        </li>
-        <li>
-          <strong class="text-white">AI service:</strong>
-          Python and FastAPI for multi-agent processing.
-        </li>
-      </ul>
+        <h1>Apurupa Prathipati</h1>
 
-      <!-- Live project links -->
-      <div class="mt-8 flex flex-wrap gap-4">
-        <a
-          href="https://apurupa810-dotcom.github.io/claim-ai-frontend/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400"
-        >
-          View Live Demo ↗
-        </a>
+        <p class="hero-description">
+          10+ years building and supporting enterprise applications across
+          banking, credit cards, retail, and telecommunications.
+        </p>
 
-        <a
-          href="https://apurupa810-dotcom.github.io/claim-ai-platform/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded-xl border border-cyan-400 px-6 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-950"
-        >
-          Project Overview ↗
-        </a>
+        <p class="hero-stack">
+          Java · Spring Boot · Angular · React · MuleSoft · Azure AKS ·
+          AWS · Docker · Kubernetes
+        </p>
+
+        <p class="muted">Eden Prairie, Minnesota</p>
+
+        <div class="actions">
+          <a href="#projects" class="button button-primary">
+            Explore My Projects
+          </a>
+
+          <a href="#experience" class="button">
+            View Experience
+          </a>
+
+          <a href="Apurupa_Resume.pdf" download class="button">
+            Download Resume
+          </a>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:apurupa810@gmail.com">
+            apurupa810@gmail.com
+          </a>
+
+          <a href="tel:+17342787599">
+            734-278-7599
+          </a>
+
+          <a
+            href="https://github.com/apurupa810-dotcom"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+        </div>
       </div>
+    </header>
 
-      <!-- GitHub repositories -->
-      <h4 class="mt-8 text-lg font-semibold text-white">
-        Explore the source code
-      </h4>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About Me</p>
+          <h2>Enterprise experience. Full-stack depth.</h2>
+        </div>
 
-      <div class="mt-4 grid gap-4 md:grid-cols-3">
-        <a
-          href="https://github.com/apurupa810-dotcom/claim-ai-frontend"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded-xl border border-slate-700 bg-slate-950 p-5 transition hover:border-cyan-400"
-        >
-          <span class="font-semibold text-cyan-300">
-            Frontend Repository ↗
-          </span>
-          <span class="mt-2 block text-sm leading-6 text-slate-300">
-            React 19 + Hooks
-          </span>
-        </a>
+        <div class="about-copy">
+          <p>
+            I am a Senior Java Full Stack Developer with experience
+            developing frontend features using Angular, AngularJS, and
+            React, and backend services using Java/J2EE, Spring Boot,
+            microservices, and REST APIs.
+          </p>
 
-        <a
-          href="https://github.com/apurupa810-dotcom/claim-ai-backend"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded-xl border border-slate-700 bg-slate-950 p-5 transition hover:border-cyan-400"
-        >
-          <span class="font-semibold text-cyan-300">
-            Backend Repository ↗
-          </span>
-          <span class="mt-2 block text-sm leading-6 text-slate-300">
-            Java 17 + Spring Boot
-          </span>
-        </a>
+          <p>
+            My work spans credit-card applications, payment workflows,
+            claims, fraud and debit disputes, digital ordering, and telecom
+            billing. At Navy Federal Credit Union, my experience includes
+            MuleSoft integrations and support for PCF/Tanzu-to-Azure AKS
+            modernization.
+          </p>
 
-        <a
-          href="https://github.com/apurupa810-dotcom/claim-ai-ai-service"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded-xl border border-slate-700 bg-slate-950 p-5 transition hover:border-cyan-400"
-        >
-          <span class="font-semibold text-cyan-300">
-            AI Service Repository ↗
-          </span>
-          <span class="mt-2 block text-sm leading-6 text-slate-300">
-            Python + FastAPI
-          </span>
-        </a>
+          <p>
+            I investigate issues across UI, services, integrations, and
+            databases, contribute code reviews and technical documentation,
+            and collaborate with product, QA, and DevOps teams.
+          </p>
+
+          <p>
+            My featured personal project, ClaimAI, combines React,
+            Java Spring Boot, and Python FastAPI to demonstrate
+            full-stack development and multi-agent AI integration.
+          </p>
+        </div>
       </div>
-    </article>
-  </div>
-</section>
+    </section>
+
+    <!-- Highlights -->
+    <section class="highlights" aria-label="Career highlights">
+      <div class="container highlight-grid">
+        <div class="highlight">
+          <strong>10+</strong>
+          <span>Years of experience</span>
+        </div>
+
+        <div class="highlight">
+          <strong>4</strong>
+          <span>Enterprise domains</span>
+        </div>
+
+        <div class="highlight">
+          <strong>Java 8–21</strong>
+          <span>Backend development</span>
+        </div>
+
+        <div class="highlight">
+          <strong>Azure AKS</strong>
+          <span>Cloud modernization</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="eyebrow">Technical Skills</p>
+        <h2>My technology stack</h2>
+
+        <p class="section-intro">
+          Technologies used across enterprise application development,
+          integration, cloud delivery, testing, and personal projects.
+        </p>
+
+        <div class="skills-grid">
+          <div class="card">
+            <h3>Languages</h3>
+            <p>
+              Java 8–21, JavaScript ES6+, TypeScript, Python,
+              SQL, PL/SQL, HTML5, CSS3; Kotlin familiarity
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Backend Development</h3>
+            <p>
+              Core Java, J2EE, Spring Boot, Spring MVC, Spring Security,
+              Spring Data JPA, Hibernate, Spring Cloud, Spring Batch,
+              microservices, REST APIs, SOAP, Node.js, Express.js
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Frontend Development</h3>
+            <p>
+              Angular, AngularJS, React, Hooks, Redux, Context API,
+              RxJS, Gatsby, Storybook, GraphQL, Styled Components,
+              MDX, SCSS, Bootstrap, Material UI
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Cloud &amp; Containers</h3>
+            <p>
+              Azure AKS, Azure Functions, Key Vault, Application Insights;
+              AWS EC2, ECS/EKS, S3, Lambda, RDS, API Gateway, CloudWatch,
+              VPC, IAM, CloudFront; PCF, Docker, Kubernetes, Helm
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Integration &amp; Messaging</h3>
+            <p>
+              MuleSoft Anypoint Platform, Mule 4, DataWeave,
+              API Manager, Runtime Manager, Kafka, RabbitMQ,
+              ActiveMQ, JMS, AWS SQS/SNS, batch processing
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Databases</h3>
+            <p>
+              PostgreSQL, Oracle, MySQL, SQL Server,
+              MongoDB, DynamoDB, Redis
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Build &amp; Delivery</h3>
+            <p>
+              Git, GitHub, Maven, Gradle, Jenkins, AWS CodePipeline,
+              Azure DevOps, GitHub Actions, Terraform, Jira,
+              Confluence, IntelliJ IDEA, VS Code
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Testing &amp; Observability</h3>
+            <p>
+              JUnit, Mockito, Jest, React Testing Library, Cypress,
+              Selenium, Jasmine, Karma, Protractor, Postman,
+              Splunk, Kibana, Grafana, Application Insights, CloudWatch
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Security &amp; AI Development</h3>
+            <p>
+              OAuth 2.0, OIDC, JWT, SAML, RBAC, secure API practices,
+              PCI-DSS/PII-aware delivery, GitHub Copilot;
+              React 19, FastAPI, and multi-agent integration in ClaimAI
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section alternate">
+      <div class="container">
+        <p class="eyebrow">Professional Experience</p>
+        <h2>Enterprise application delivery</h2>
+
+        <div class="experience-list">
+          <article class="experience-card">
+            <div class="experience-heading">
+              <div>
+                <h3>Navy Federal Credit Union</h3>
+                <p class="role">Senior Full Stack Developer</p>
+                <p class="location">Vienna, VA</p>
+              </div>
+
+              <p class="dates">Apr 2021 – Present</p>
+            </div>
+
+            <p class="project-name">
+              Claims, Fraud, and Debit Disputes Platform
+            </p>
+
+            <ul class="details">
+              <li>
+                Build Angular/TypeScript screens for claim intake,
+                dispute questionnaires, multi-dispute workflows,
+                validation, status tracking, and alerts.
+              </li>
+              <li>
+                Develop Spring Boot microservices and REST APIs for
+                claim creation, business validation, dispute status,
+                and downstream banking integrations.
+              </li>
+              <li>
+                Work with PostgreSQL queries, Redis-backed flows,
+                claims batch processing, and documentation-generation
+                workflows.
+              </li>
+              <li>
+                Contribute to MuleSoft API integrations and DataWeave
+                transformations; troubleshoot connectivity, payload,
+                and integration issues.
+              </li>
+              <li>
+                Work with RabbitMQ/Kafka and Azure Functions to support
+                asynchronous processing and investigate retries and
+                downstream behavior.
+              </li>
+              <li>
+                Support PCF/Tanzu-to-Azure AKS migration with Docker,
+                Helm/Kubernetes configuration, Azure DevOps pipelines,
+                and release validation.
+              </li>
+              <li>
+                Contribute to chatbot and workflow-automation efforts,
+                analyze defects across application layers, and maintain
+                technical designs and operational runbooks.
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-heading">
+              <div>
+                <h3>Little Caesars</h3>
+                <p class="role">Full Stack Developer</p>
+                <p class="location">Detroit, MI</p>
+              </div>
+
+              <p class="dates">Sep 2020 – Mar 2021</p>
+            </div>
+
+            <p class="project-name">
+              Digital Ordering and Web Experiences
+            </p>
+
+            <ul class="details">
+              <li>
+                Built responsive React/Gatsby pages and digital-ordering
+                experiences using reusable components and
+                JavaScript/TypeScript.
+              </li>
+              <li>
+                Created and documented components with Storybook,
+                Styled Components, and MDX; used Git, Yarn, and Lerna.
+              </li>
+              <li>
+                Contributed Java/Spring Boot backend functionality and
+                integrated GraphQL and REST endpoints with ordering views.
+              </li>
+              <li>
+                Worked with PostgreSQL and Redis-backed data flows;
+                tested changes using Jest, React Testing Library,
+                Cypress, JUnit, and Mockito.
+              </li>
+              <li>
+                Supported AWS delivery and release workflows using
+                EC2, ECS, S3, CloudFront, RDS, Lambda, and CloudWatch.
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-heading">
+              <div>
+                <h3>American Express</h3>
+                <p class="role">Full Stack Developer</p>
+                <p class="location">New York, NY</p>
+              </div>
+
+              <p class="dates">May 2018 – Aug 2020</p>
+            </div>
+
+            <p class="project-name">Credit Card Applications</p>
+
+            <ul class="details">
+              <li>
+                Contributed to Angular-to-React/TypeScript migration
+                for credit-card workflows and developed reusable components.
+              </li>
+              <li>
+                Developed views for accounts, transactions, statements,
+                payments, alerts, and disputes, including validation
+                and error states.
+              </li>
+              <li>
+                Built Java/Spring Boot REST services and a
+                Node.js/Express backend-for-frontend layer to aggregate
+                service data.
+              </li>
+              <li>
+                Supported Kafka event processing, PostgreSQL-backed
+                features, and AWS components including EC2, ECS/EKS,
+                S3, Lambda, RDS, API Gateway, and CloudWatch.
+              </li>
+              <li>
+                Implemented and supported Spring Security, OAuth 2.0,
+                and JWT; participated in testing, Jenkins/AWS CodePipeline
+                releases, and production troubleshooting.
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-heading">
+              <div>
+                <h3>Cox Communications</h3>
+                <p class="role">Full Stack Developer</p>
+                <p class="location">Hyderabad, India</p>
+              </div>
+
+              <p class="dates">Jun 2013 – Dec 2015</p>
+            </div>
+
+            <p class="project-name">
+              Telecom Customer and Billing Applications
+            </p>
+
+            <ul class="details">
+              <li>
+                Developed AngularJS/JavaScript interfaces for telecom
+                billing, account management, and customer-service
+                workflows using HTML and CSS.
+              </li>
+              <li>
+                Implemented Spring MVC controller, service, and
+                data-access functionality and maintained REST integrations.
+              </li>
+              <li>
+                Wrote SQL/PL-SQL queries and traced defects across
+                AngularJS screens, Java services, REST APIs,
+                and relational data.
+              </li>
+              <li>
+                Participated in Jenkins build/release activities and
+                automated UI testing with Selenium, Jasmine, Karma,
+                and Protractor.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="eyebrow">Personal Projects</p>
+        <h2>Featured project</h2>
+
+        <p class="section-intro">
+          Explore my full-stack project through the live frontend
+          and dedicated frontend, backend, and AI service repositories.
+        </p>
+
+        <article class="project-card">
+          <p class="eyebrow">Full-Stack Development · AI Integration</p>
+
+          <h3>ClaimAI</h3>
+
+          <p class="project-subtitle">
+            Multi-Agent AI Claims Processing Platform
+          </p>
+
+          <p class="project-description">
+            A polyglot full-stack demonstration project built to showcase
+            senior full-stack development skills. ClaimAI combines a
+            React interface, a Java Spring Boot backend, and a Python
+            FastAPI service with four specialized AI agents.
+          </p>
+
+          <div class="tags" aria-label="ClaimAI technologies">
+            <span class="tag">React 19 &amp; Hooks</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Java 17</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">JavaScript / TypeScript</span>
+            <span class="tag">Docker Compose</span>
+            <span class="tag">GitHub Pages</span>
+          </div>
+
+          <h4>Architecture</h4>
+
+          <div class="architecture">
+            <div class="architecture-item">
+              <h4>React Frontend</h4>
+              <p>
+                React 19, Hooks, and Tailwind CSS provide the user
+                interface and live demo.
+              </p>
+            </div>
+
+            <div class="architecture-item">
+              <h4>Java Backend</h4>
+              <p>
+                Java 17 and Spring Boot provide the main backend API
+                and orchestrate application and AI service interactions.
+              </p>
+            </div>
+
+            <div class="architecture-item">
+              <h4>Python AI Service</h4>
+              <p>
+                Python and FastAPI implement the multi-agent AI layer
+                with four specialized agents.
+              </p>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a
+              href="https://apurupa810-dotcom.github.io/claim-ai-frontend/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary"
+            >
+              View Live Demo ↗
+            </a>
+
+            <a
+              href="https://apurupa810-dotcom.github.io/claim-ai-platform/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button"
+            >
+              Project Overview ↗
+            </a>
+          </div>
+
+          <h4>Explore the source code</h4>
+
+          <div class="repository-grid">
+            <a
+              href="https://github.com/apurupa810-dotcom/claim-ai-frontend"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="repository"
+            >
+              <strong>Frontend Repository ↗</strong>
+              <span>React 19 + Hooks</span>
+              <span>User interface and demo</span>
+            </a>
+
+            <a
+              href="https://github.com/apurupa810-dotcom/claim-ai-backend"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="repository"
+            >
+              <strong>Backend Repository ↗</strong>
+              <span>Java 17 + Spring Boot</span>
+              <span>Main backend API</span>
+            </a>
+
+            <a
+              href="https://github.com/apurupa810-dotcom/claim-ai-ai-service"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="repository"
+            >
+              <strong>AI Service Repository ↗</strong>
+              <span>Python + FastAPI</span>
+              <span>Multi-agent AI logic</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section alternate">
+      <div class="container">
+        <p class="eyebrow">Education</p>
+        <h2>Academic background</h2>
+
+        <div class="education-grid">
+          <div class="card">
+            <h3>Master of Science</h3>
+            <p>Computer Information Systems</p>
+            <p>New England College, Henniker, NH</p>
+            <p>2016 – 2018</p>
+          </div>
+
+          <div class="card">
+            <h3>Bachelor of Science</h3>
+            <p>Computer Science</p>
+            <p>
+              Jawaharlal Nehru Technological University,
+              Hyderabad, India
+            </p>
+            <p>2014</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something together</h2>
+
+        <p class="contact-description">
+          Open to Senior Full Stack Developer and Backend Developer
+          opportunities in banking, healthcare insurance, and ecommerce.
+        </p>
+
+        <div class="actions">
+          <a
+            href="mailto:apurupa810@gmail.com"
+            class="button button-primary"
+          >
+            Email Me
+          </a>
+
+          <a
+            href="Apurupa_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            View Resume
+          </a>
+
+          <a
+            href="https://github.com/apurupa810-dotcom"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            GitHub Profile ↗
+          </a>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:apurupa810@gmail.com">
+            apurupa810@gmail.com
+          </a>
+          <a href="tel:+17342787599">
+            734-278-7599
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Apurupa Prathipati. All rights reserved.</p>
+  </footer>
+</body>
+</html>
