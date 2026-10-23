@@ -1,542 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta
-    name="description"
-    content="Apurupa Prathipati — Senior Java Full Stack and Backend Developer with experience in Java, Spring Boot, Angular, React, MuleSoft, AWS, and Azure AKS."
-  />
-
-  <title>Apurupa Prathipati | Senior Java Full Stack Developer</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 90px;
-    }
-
-    body {
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system,
-        BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    a:focus-visible {
-      outline: 2px solid #22d3ee;
-      outline-offset: 5px;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-    }
-  </style>
-</head>
-
-<body class="bg-slate-950 text-slate-200">
-  <!-- Navigation -->
-  <nav class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/95 backdrop-blur">
-    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-4">
-      <a href="#home" class="text-xl font-bold text-white" aria-label="Apurupa Prathipati home">
-        AP
-      </a>
-
-      <div class="flex flex-wrap gap-4 text-sm text-slate-300 md:gap-6">
-        <a href="#about" class="hover:text-cyan-400">About</a>
-        <a href="#skills" class="hover:text-cyan-400">Skills</a>
-        <a href="#experience" class="hover:text-cyan-400">Experience</a>
-        <a href="#education" class="hover:text-cyan-400">Education</a>
-        <a href="#contact" class="hover:text-cyan-400">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <!-- Hero -->
-    <header
-      id="home"
-      class="bg-gradient-to-br from-cyan-950 via-slate-950 to-indigo-950 py-24 md:py-28"
+<!-- Projects -->
+<section id="projects" class="py-20">
+  <div class="mx-auto max-w-6xl px-6">
+    <p
+      class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400"
     >
-      <div class="mx-auto max-w-6xl px-6 text-center">
-        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
-          Senior Java Full Stack &amp; Backend Developer
-        </p>
+      Projects
+    </p>
 
-        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-7xl">
-          Apurupa Prathipati
-        </h1>
+    <h2 class="mt-3 text-4xl font-bold text-white">
+      Featured project
+    </h2>
 
-        <p class="mx-auto mt-7 max-w-3xl text-lg leading-8 text-slate-300 md:text-xl">
-          10+ years building and supporting enterprise applications across
-          banking, credit cards, retail, and telecommunications.
-        </p>
-
-        <p class="mx-auto mt-4 max-w-4xl text-base leading-8 text-slate-400 md:text-lg">
-          Java · Spring Boot · Angular · React · MuleSoft · Azure AKS ·
-          AWS · Docker · Kubernetes
-        </p>
-
-        <p class="mt-6 text-slate-400">
-          Eden Prairie, Minnesota
-        </p>
-
-        <div class="mt-10 flex flex-wrap justify-center gap-4">
-          <a
-            href="#experience"
-            class="rounded-xl bg-cyan-500 px-7 py-4 font-semibold text-slate-950 transition hover:bg-cyan-400"
-          >
-            View Experience
-          </a>
-
-          <a
-            href="Apurupa_Resume.pdf"
-            download
-            class="rounded-xl border border-cyan-400 px-7 py-4 font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-950"
-          >
-            Download Resume
-          </a>
-        </div>
-
-        <div class="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-slate-400">
-          <a href="mailto:apurupa810@gmail.com" class="hover:text-cyan-400">
-            apurupa810@gmail.com
-          </a>
-
-          <a href="tel:+17342787599" class="hover:text-cyan-400">
-            734-278-7599
-          </a>
-
-          <a
-            href="https://github.com/apurupa810-dotcom/apurupa-portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="hover:text-cyan-400"
-          >
-            GitHub
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="py-20">
-      <div class="mx-auto max-w-6xl px-6">
-        <div class="grid gap-10 lg:grid-cols-3">
-          <div>
-            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
-              About Me
-            </p>
-
-            <h2 class="mt-3 text-4xl font-bold text-white">
-              Enterprise engineering with full-stack depth
-            </h2>
-          </div>
-
-          <div class="space-y-5 text-lg leading-8 text-slate-300 lg:col-span-2">
-            <p>
-              I am a Senior Java Full Stack Developer building frontend
-              features with Angular, AngularJS, and React, and backend
-              services with Java/J2EE, Spring Boot, microservices, and REST APIs.
-            </p>
-
-            <p>
-              My experience includes credit-card and payment workflows,
-              claims, fraud and debit disputes, digital ordering, and telecom
-              billing. My recent work at Navy Federal includes MuleSoft
-              integrations and support for PCF/Tanzu-to-Azure AKS modernization.
-            </p>
-
-            <p>
-              I trace issues across UI, service, integration, and database
-              layers, contribute code reviews and technical documentation,
-              and coordinate fixes with engineering, product, QA, and DevOps teams.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Highlights -->
-    <section class="border-y border-slate-800 bg-slate-900 py-14">
-      <div class="mx-auto grid max-w-6xl gap-6 px-6 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="rounded-2xl border border-slate-700 bg-slate-950 p-6">
-          <p class="text-4xl font-bold text-cyan-400">10+</p>
-          <p class="mt-2 text-slate-300">Years of experience</p>
-        </div>
-
-        <div class="rounded-2xl border border-slate-700 bg-slate-950 p-6">
-          <p class="text-4xl font-bold text-cyan-400">4</p>
-          <p class="mt-2 text-slate-300">Enterprise domains</p>
-        </div>
-
-        <div class="rounded-2xl border border-slate-700 bg-slate-950 p-6">
-          <p class="text-4xl font-bold text-cyan-400">Java 8–21</p>
-          <p class="mt-2 text-slate-300">Backend development</p>
-        </div>
-
-        <div class="rounded-2xl border border-slate-700 bg-slate-950 p-6">
-          <p class="text-4xl font-bold text-cyan-400">AKS</p>
-          <p class="mt-2 text-slate-300">Cloud modernization</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="py-20">
-      <div class="mx-auto max-w-6xl px-6">
-        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
-          Technical Skills
-        </p>
-
-        <h2 class="mt-3 text-4xl font-bold text-white">
-          Core technology stack
-        </h2>
-
-        <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <div class="rounded-2xl border border-slate-800 bg-slate-900 p-7">
-            <h3 class="text-xl font-semibold text-white">Languages</h3>
-            <p class="mt-4 leading-7 text-slate-300">
-              Java 8–21, JavaScript ES6+, TypeScript, Python, SQL, PL/SQL,
-              HTML5, CSS3; Kotlin familiarity
-            </p>
-          </div>
-
-          <div class="rounded-2xl border border-slate-800 bg-slate-900 p-7">
-            <h3 class="text-xl font-semibold text-white">Java &amp; Backend</h3>
-            <p class="mt-4 leading-7 text-slate-300">
-              Core Java, J2EE, Spring Boot, Spring MVC, Spring Security,
-              Spring Data JPA, Hibernate, Spring Cloud, Spring Batch,
-              microservices, REST APIs, SOAP, Node.js, Express.js
-            </p>
-          </div>
-
-          <div class="rounded-2xl border border-slate-800 bg-slate-900 p-7">
-            <h3 class="text-xl font-semibold text-white">Frontend</h3>
-            <p class="mt-4 leading-7 text-slate-300">
-              Angular, AngularJS, React, Hooks, Redux, Context API, RxJS,
-              Gatsby, Storybook, GraphQL, Styled Components, MDX, SCSS,
-              Bootstrap, Material UI
-            </p>
-          </div>
-
-          <div class="rounded-2xl border border-slate-800 bg-slate-900 p-7">
-            <h3 class="text-xl font-semibold text-white">Cloud &amp; Containers</h3>
-            <p class="mt-4 leading-7 text-slate-300">
-              Azure AKS, Azure Functions, Key Vault, Application Insights;
-              AWS EC2, ECS/EKS, S3, Lambda, RDS, API Gateway, CloudWatch,
-              VPC, IAM, CloudFront; PCF, Docker, Kubernetes, Helm
-            </p>
-          </div>
-
-          <div class="rounded-2xl border border-slate-800 bg-slate-900 p-7">
-            <h3 class="text-xl font-semibold text-white">Integration &amp; Messaging</h3>
-            <p class="mt-4 leading-7 text-slate-300">
-              MuleSoft Anypoint Platform, Mule 4, DataWeave, API Manager,
-              Runtime Manager, Kafka, RabbitMQ, ActiveMQ, JMS,
-              AWS SQS/SNS, batch processing
-            </p>
-          </div>
-
-          <div class="rounded-2xl border border-slate-800 bg-slate-900 p-7">
-            <h3 class="text-xl font-semibold text-white">Databases</h3>
-            <p class="mt-4 leading-7 text-slate-300">
-              PostgreSQL, Oracle, MySQL, SQL Server, MongoDB, DynamoDB,
-              Redis
-            </p>
-          </div>
-
-          <div class="rounded-2xl border border-slate-800 bg-slate-900 p-7">
-            <h3 class="text-xl font-semibold text-white">Build &amp; Delivery</h3>
-            <p class="mt-4 leading-7 text-slate-300">
-              Git, GitHub, Maven, Gradle, Jenkins, AWS CodePipeline,
-              Azure DevOps, GitHub Actions, Terraform, Jira, Confluence,
-              IntelliJ IDEA, VS Code
-            </p>
-          </div>
-
-          <div class="rounded-2xl border border-slate-800 bg-slate-900 p-7">
-            <h3 class="text-xl font-semibold text-white">Testing &amp; Observability</h3>
-            <p class="mt-4 leading-7 text-slate-300">
-              JUnit, Mockito, Jest, React Testing Library, Cypress,
-              Selenium, Jasmine, Karma, Protractor, Postman, Splunk,
-              Kibana, Grafana, Application Insights, CloudWatch
-            </p>
-          </div>
-
-          <div class="rounded-2xl border border-slate-800 bg-slate-900 p-7">
-            <h3 class="text-xl font-semibold text-white">Security &amp; AI Tools</h3>
-            <p class="mt-4 leading-7 text-slate-300">
-              OAuth 2.0, OIDC, JWT, SAML, RBAC, secure API practices,
-              PCI-DSS/PII-aware delivery; GitHub Copilot and AI-assisted
-              development with code review and validation
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="bg-slate-900 py-20">
-      <div class="mx-auto max-w-6xl px-6">
-        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
-          Professional Experience
-        </p>
-
-        <h2 class="mt-3 text-4xl font-bold text-white">
-          Enterprise application delivery
-        </h2>
-
-        <div class="mt-12 space-y-8">
-          <!-- Navy Federal -->
-          <article class="rounded-3xl border border-slate-700 bg-slate-950 p-6 md:p-8">
-            <div class="flex flex-col justify-between gap-3 md:flex-row">
-              <div>
-                <h3 class="text-2xl font-bold text-white">
-                  Navy Federal Credit Union
-                </h3>
-                <p class="mt-1 text-cyan-400">Senior Full Stack Developer</p>
-                <p class="mt-2 text-sm text-slate-400">Vienna, VA</p>
-              </div>
-              <p class="shrink-0 text-slate-400">Apr 2021 – Present</p>
-            </div>
-
-            <p class="mt-5 font-medium text-slate-200">
-              Claims, Fraud, and Debit Disputes Platform
-            </p>
-
-            <ul class="mt-5 list-disc space-y-3 pl-5 leading-7 text-slate-300">
-              <li>
-                Build Angular/TypeScript screens for claim intake, dispute
-                questionnaires, multi-dispute claim flows, validation,
-                status tracking, and alerts.
-              </li>
-              <li>
-                Develop Spring Boot microservices and REST APIs for claim
-                creation, business validation, dispute status, and
-                downstream banking integrations.
-              </li>
-              <li>
-                Work with PostgreSQL queries, Redis-backed application
-                flows, claims batch processing, and documentation-generation workflows.
-              </li>
-              <li>
-                Contribute to MuleSoft API integrations and DataWeave
-                transformations; troubleshoot connectivity, payload,
-                and integration issues.
-              </li>
-              <li>
-                Work with RabbitMQ/Kafka and Azure Functions for
-                asynchronous processing and investigate retries and
-                downstream service behavior.
-              </li>
-              <li>
-                Support PCF/Tanzu-to-Azure AKS migration with Docker,
-                Helm/Kubernetes configuration, Azure DevOps pipelines,
-                and release validation.
-              </li>
-              <li>
-                Contribute to chatbot and workflow-automation efforts,
-                analyze defects across application layers, and maintain
-                technical designs, runbooks, and operational documentation.
-              </li>
-            </ul>
-          </article>
-
-          <!-- Little Caesars -->
-          <article class="rounded-3xl border border-slate-700 bg-slate-950 p-6 md:p-8">
-            <div class="flex flex-col justify-between gap-3 md:flex-row">
-              <div>
-                <h3 class="text-2xl font-bold text-white">Little Caesars</h3>
-                <p class="mt-1 text-cyan-400">Full Stack Developer</p>
-                <p class="mt-2 text-sm text-slate-400">Detroit, MI</p>
-              </div>
-              <p class="shrink-0 text-slate-400">Sep 2020 – Mar 2021</p>
-            </div>
-
-            <p class="mt-5 font-medium text-slate-200">
-              Digital Ordering and Web Experiences
-            </p>
-
-            <ul class="mt-5 list-disc space-y-3 pl-5 leading-7 text-slate-300">
-              <li>
-                Built responsive React/Gatsby pages and digital-ordering
-                experiences with reusable components and JavaScript/TypeScript.
-              </li>
-              <li>
-                Created and documented components with Storybook,
-                Styled Components, and MDX; used Git, Yarn, and Lerna.
-              </li>
-              <li>
-                Contributed Java/Spring Boot backend functionality and
-                integrated GraphQL and REST endpoints with ordering views.
-              </li>
-              <li>
-                Worked with PostgreSQL and Redis-backed data flows;
-                tested changes using Jest, React Testing Library,
-                Cypress, JUnit, and Mockito.
-              </li>
-              <li>
-                Supported AWS delivery and releases using EC2, ECS, S3,
-                CloudFront, RDS, Lambda, and CloudWatch.
-              </li>
-            </ul>
-          </article>
-
-          <!-- American Express -->
-          <article class="rounded-3xl border border-slate-700 bg-slate-950 p-6 md:p-8">
-            <div class="flex flex-col justify-between gap-3 md:flex-row">
-              <div>
-                <h3 class="text-2xl font-bold text-white">American Express</h3>
-                <p class="mt-1 text-cyan-400">Full Stack Developer</p>
-                <p class="mt-2 text-sm text-slate-400">New York, NY</p>
-              </div>
-              <p class="shrink-0 text-slate-400">May 2018 – Aug 2020</p>
-            </div>
-
-            <p class="mt-5 font-medium text-slate-200">
-              Credit Card Applications
-            </p>
-
-            <ul class="mt-5 list-disc space-y-3 pl-5 leading-7 text-slate-300">
-              <li>
-                Contributed to Angular-to-React/TypeScript migration
-                for credit-card workflows and built reusable components.
-              </li>
-              <li>
-                Developed views for accounts, transactions, statements,
-                payments, alerts, and disputes, including validation
-                and error states.
-              </li>
-              <li>
-                Built Java/Spring Boot REST services and a Node.js/Express
-                backend-for-frontend layer to aggregate service data.
-              </li>
-              <li>
-                Supported Kafka event processing, PostgreSQL-backed
-                features, and AWS components including EC2, ECS/EKS,
-                S3, Lambda, RDS, API Gateway, and CloudWatch.
-              </li>
-              <li>
-                Implemented and supported Spring Security, OAuth 2.0,
-                and JWT; participated in testing, Jenkins/AWS CodePipeline
-                releases, deployment checks, and production troubleshooting.
-              </li>
-            </ul>
-          </article>
-
-          <!-- Cox Communications -->
-          <article class="rounded-3xl border border-slate-700 bg-slate-950 p-6 md:p-8">
-            <div class="flex flex-col justify-between gap-3 md:flex-row">
-              <div>
-                <h3 class="text-2xl font-bold text-white">Cox Communications</h3>
-                <p class="mt-1 text-cyan-400">Full Stack Developer</p>
-                <p class="mt-2 text-sm text-slate-400">Hyderabad, India</p>
-              </div>
-              <p class="shrink-0 text-slate-400">Jun 2013 – Dec 2015</p>
-            </div>
-
-            <p class="mt-5 font-medium text-slate-200">
-              Telecom Customer and Billing Applications
-            </p>
-
-            <ul class="mt-5 list-disc space-y-3 pl-5 leading-7 text-slate-300">
-              <li>
-                Developed AngularJS/JavaScript interfaces for telecom
-                billing, account management, and customer-service
-                workflows using HTML and CSS.
-              </li>
-              <li>
-                Implemented Spring MVC controller, service, and data-access
-                functionality and maintained REST integrations.
-              </li>
-              <li>
-                Wrote SQL/PL-SQL queries and traced defects across
-                AngularJS screens, Java services, REST APIs, and relational data.
-              </li>
-              <li>
-                Participated in Jenkins build/release activities and
-                automated UI testing with Selenium, Jasmine, Karma,
-                and Protractor.
-              </li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="py-20">
-      <div class="mx-auto max-w-6xl px-6">
-        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
-          Education
-        </p>
-
-        <h2 class="mt-3 text-4xl font-bold text-white">
-          Academic background
-        </h2>
-
-        <div class="mt-10 grid gap-6 md:grid-cols-2">
-          <div class="rounded-2xl border border-slate-800 bg-slate-900 p-7">
-            <h3 class="text-xl font-semibold text-white">Master of Science</h3>
-            <p class="mt-3 text-slate-300">Computer Information Systems</p>
-            <p class="mt-2 text-slate-400">
-              New England College, Henniker, NH
-            </p>
-            <p class="mt-2 text-sm text-slate-400">2016 – 2018</p>
-          </div>
-
-          <div class="rounded-2xl border border-slate-800 bg-slate-900 p-7">
-            <h3 class="text-xl font-semibold text-white">Bachelor of Science</h3>
-            <p class="mt-3 text-slate-300">Computer Science</p>
-            <p class="mt-2 text-slate-400">
-              Jawaharlal Nehru Technological University, Hyderabad, India
-            </p>
-            <p class="mt-2 text-sm text-slate-400">2014</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section
-      id="contact"
-      class="border-t border-slate-800 bg-gradient-to-br from-indigo-950 via-slate-950 to-cyan-950 py-20"
+    <article
+      class="mt-10 rounded-3xl border border-slate-800 bg-slate-900 p-6 md:p-8"
     >
-      <div class="mx-auto max-w-4xl px-6 text-center">
-        <h2 class="text-4xl font-bold text-white">Let’s connect</h2>
+      <p class="text-sm font-semibold text-cyan-400">
+        Full-Stack Development · AI Integration
+      </p>
 
-        <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-          Connect with me about Java, full-stack development, backend
-          engineering, and enterprise cloud modernization.
-        </p>
+      <h3 class="mt-3 text-3xl font-bold text-white">
+        ClaimAI
+      </h3>
 
-        <div class="mt-9 flex flex-wrap justify-center gap-4">
-          <a
-            href="mailto:apurupa810@gmail.com"
-            class="rounded-xl bg-cyan-500 px-7 py-4 font-semibold text-slate-950 transition hover:bg-cyan-400"
-          >
-            Email Me
-          </a>
+      <p class="mt-3 text-xl text-slate-200">
+        Multi-Agent AI Claims Processing Platform
+      </p>
 
-          <a
-            href="Apurupa_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="rounded-xl border border-cyan-400 px-7 py-4 font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-950"
-          >
-            View Resume
-          </a>
-        </div>
+      <p class="mt-4 max-w-3xl leading-7 text-slate-300">
+        A full-stack demonstration project combining a React frontend,
+        Java Spring Boot backend, and Python FastAPI service with four
+        specialized AI agents.
+      </p>
+
+      <!-- Technology stack -->
+      <div class="mt-6 flex flex-wrap gap-2">
+        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
+          React 19
+        </span>
+        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
+          Tailwind CSS
+        </span>
+        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
+          Java 17
+        </span>
+        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
+          Spring Boot
+        </span>
+        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
+          Python
+        </span>
+        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
+          FastAPI
+        </span>
+        <span class="rounded-full bg-slate-800 px-3 py-1 text-sm text-cyan-200">
+          Docker
+        </span>
       </div>
-    </section>
-  </main>
 
-  <footer class="px-6 py-10 text-center text-sm text-slate-400">
-    <p>© 2026 Apurupa Prathipati. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+      <!-- Architecture -->
+      <h4 class="mt-8 text-lg font-semibold text-white">
+        Architecture
+      </h4>
+
+      <ul class="mt-3 list-disc space-y-2 pl-5 leading-7 text-slate-300">
+        <li>
+          <strong class="text-white">Frontend:</strong>
+          React and Tailwind CSS for the user interface.
+        </li>
+        <li>
+          <strong class="text-white">Backend:</strong>
+          Java Spring Boot for API orchestration.
+        </li>
+        <li>
+          <strong class="text-white">AI service:</strong>
+          Python and FastAPI for multi-agent processing.
+        </li>
+      </ul>
+
+      <!-- Live project links -->
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a
+          href="https://apurupa810-dotcom.github.io/claim-ai-frontend/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400"
+        >
+          View Live Demo ↗
+        </a>
+
+        <a
+          href="https://apurupa810-dotcom.github.io/claim-ai-platform/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-xl border border-cyan-400 px-6 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-950"
+        >
+          Project Overview ↗
+        </a>
+      </div>
+
+      <!-- GitHub repositories -->
+      <h4 class="mt-8 text-lg font-semibold text-white">
+        Explore the source code
+      </h4>
+
+      <div class="mt-4 grid gap-4 md:grid-cols-3">
+        <a
+          href="https://github.com/apurupa810-dotcom/claim-ai-frontend"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-xl border border-slate-700 bg-slate-950 p-5 transition hover:border-cyan-400"
+        >
+          <span class="font-semibold text-cyan-300">
+            Frontend Repository ↗
+          </span>
+          <span class="mt-2 block text-sm leading-6 text-slate-300">
+            React 19 + Hooks
+          </span>
+        </a>
+
+        <a
+          href="https://github.com/apurupa810-dotcom/claim-ai-backend"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-xl border border-slate-700 bg-slate-950 p-5 transition hover:border-cyan-400"
+        >
+          <span class="font-semibold text-cyan-300">
+            Backend Repository ↗
+          </span>
+          <span class="mt-2 block text-sm leading-6 text-slate-300">
+            Java 17 + Spring Boot
+          </span>
+        </a>
+
+        <a
+          href="https://github.com/apurupa810-dotcom/claim-ai-ai-service"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-xl border border-slate-700 bg-slate-950 p-5 transition hover:border-cyan-400"
+        >
+          <span class="font-semibold text-cyan-300">
+            AI Service Repository ↗
+          </span>
+          <span class="mt-2 block text-sm leading-6 text-slate-300">
+            Python + FastAPI
+          </span>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
