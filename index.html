@@ -6,7 +6,7 @@
 
   <meta
     name="description"
-    content="Apurupa Prathipati — Senior Java Full Stack and Backend Developer. Explore my experience, technical skills, and ClaimAI full-stack project."
+    content="Apurupa Prathipati — Senior Java Full Stack and Backend Developer based in Livonia, Michigan. Java, Spring Boot, React, Angular, cloud modernization, and AI integration."
   />
 
   <title>Apurupa Prathipati | Senior Full Stack Developer</title>
@@ -103,7 +103,7 @@
       color: var(--accent);
       font-size: 0.78rem;
       font-weight: 700;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
     }
 
@@ -112,7 +112,7 @@
     }
 
     .section-intro {
-      max-width: 700px;
+      max-width: 760px;
       margin-bottom: 36px;
       color: var(--muted);
     }
@@ -140,12 +140,16 @@
       font-weight: 800;
     }
 
+    .brand span {
+      color: var(--accent);
+    }
+
     .nav-links {
       display: flex;
       flex-wrap: wrap;
       gap: 12px 24px;
-      font-size: 0.9rem;
       color: var(--muted);
+      font-size: 0.9rem;
     }
 
     .nav-links a:hover,
@@ -162,7 +166,7 @@
     }
 
     .hero-description {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 auto 20px;
       color: #cbd5e1;
       font-size: 1.2rem;
@@ -235,9 +239,9 @@
     }
 
     .highlights {
+      padding-block: 36px;
       border-block: 1px solid var(--border);
       background: var(--surface);
-      padding-block: 36px;
     }
 
     .highlight-grid {
@@ -293,6 +297,16 @@
       color: var(--muted);
     }
 
+    .learning-label {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 3px 10px;
+      border: 1px solid #475569;
+      border-radius: 999px;
+      color: #cbd5e1;
+      font-size: 0.75rem;
+    }
+
     .experience-list {
       display: grid;
       gap: 26px;
@@ -305,8 +319,8 @@
 
     .experience-heading {
       display: flex;
-      justify-content: space-between;
       align-items: flex-start;
+      justify-content: space-between;
       gap: 20px;
     }
 
@@ -316,7 +330,7 @@
       font-weight: 600;
     }
 
-    .location,
+    .work-mode,
     .dates {
       color: var(--muted);
       font-size: 0.92rem;
@@ -378,7 +392,8 @@
       font-size: 0.8rem;
     }
 
-    .architecture {
+    .architecture,
+    .repository-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 16px;
@@ -404,13 +419,6 @@
 
     .architecture-item h4 {
       margin-top: 0;
-    }
-
-    .repository-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 18px;
     }
 
     .repository {
@@ -567,7 +575,7 @@
   <nav class="navigation" aria-label="Main navigation">
     <div class="container navigation-inner">
       <a href="#home" class="brand" aria-label="Apurupa Prathipati home">
-        AP<span style="color: var(--accent)">.</span>
+        AP<span>.</span>
       </a>
 
       <div class="nav-links">
@@ -597,11 +605,11 @@
         </p>
 
         <p class="hero-stack">
-          Java · Spring Boot · Angular · React · MuleSoft · Azure AKS ·
-          AWS · Docker · Kubernetes
+          Java · Spring Boot · React · Angular · Azure AKS · AWS ·
+          MuleSoft · Agentic AI · MCP
         </p>
 
-        <p class="muted">Eden Prairie, Minnesota</p>
+        <p class="muted">Livonia, Michigan</p>
 
         <div class="actions">
           <a href="#projects" class="button button-primary">
@@ -612,7 +620,7 @@
             View Experience
           </a>
 
-          <a href="Apurupa_Resume.pdf" download class="button">
+          <a href="Apurupa_Resume.docx" download class="button">
             Download Resume
           </a>
         </div>
@@ -633,6 +641,14 @@
           >
             GitHub ↗
           </a>
+
+          <a
+            href="https://www.linkedin.com/in/rupa-p-75b502178/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
         </div>
       </div>
     </header>
@@ -647,30 +663,36 @@
 
         <div class="about-copy">
           <p>
-            I am a Senior Java Full Stack Developer with experience
-            developing frontend features using Angular, AngularJS, and
-            React, and backend services using Java/J2EE, Spring Boot,
-            microservices, and REST APIs.
+            I am a Senior Java Full Stack Developer based in Livonia,
+            Michigan. I develop frontend features with Angular,
+            AngularJS, and React, and backend services with Java/J2EE,
+            Spring Boot, microservices, and REST APIs.
           </p>
 
           <p>
-            My work spans credit-card applications, payment workflows,
-            claims, fraud and debit disputes, digital ordering, and telecom
-            billing. At Navy Federal Credit Union, my experience includes
-            MuleSoft integrations and support for PCF/Tanzu-to-Azure AKS
-            modernization.
+            My experience includes credit-card and payment workflows,
+            claims, fraud and debit disputes, ecommerce, digital ordering,
+            and telecom billing. My work also includes
+            PCF/Tanzu-to-Azure AKS modernization and Angular-to-React
+            migration.
           </p>
 
           <p>
-            I investigate issues across UI, services, integrations, and
-            databases, contribute code reviews and technical documentation,
-            and collaborate with product, QA, and DevOps teams.
+            At Navy Federal Credit Union, I have developed internal
+            agentic AI capabilities using OpenAI APIs, LangGraph,
+            LangChain, and MCP integrations connecting agents with
+            Java/Spring services and enterprise APIs.
           </p>
 
           <p>
-            My featured personal project, ClaimAI, combines React,
-            Java Spring Boot, and Python FastAPI to demonstrate
-            full-stack development and multi-agent AI integration.
+            I investigate issues across UI, services, integrations,
+            and databases, and mentor developers through code reviews,
+            implementation guidance, troubleshooting, and knowledge sharing.
+          </p>
+
+          <p>
+            My personal project, ClaimAI, demonstrates full-stack
+            integration using React, Java Spring Boot, and Python FastAPI.
           </p>
         </div>
       </div>
@@ -685,18 +707,18 @@
         </div>
 
         <div class="highlight">
-          <strong>4</strong>
-          <span>Enterprise domains</span>
-        </div>
-
-        <div class="highlight">
-          <strong>Java 8–21</strong>
-          <span>Backend development</span>
+          <strong>Java</strong>
+          <span>Spring Boot and REST APIs</span>
         </div>
 
         <div class="highlight">
           <strong>Azure AKS</strong>
           <span>Cloud modernization</span>
+        </div>
+
+        <div class="highlight">
+          <strong>AI + MCP</strong>
+          <span>Agent and tool integration</span>
         </div>
       </div>
     </section>
@@ -708,8 +730,8 @@
         <h2>My technology stack</h2>
 
         <p class="section-intro">
-          Technologies used across enterprise application development,
-          integration, cloud delivery, testing, and personal projects.
+          Experience across enterprise development, cloud delivery,
+          API integration, testing, and AI engineering.
         </p>
 
         <div class="skills-grid">
@@ -725,7 +747,7 @@
             <h3>Backend Development</h3>
             <p>
               Core Java, J2EE, Spring Boot, Spring MVC, Spring Security,
-              Spring Data JPA, Hibernate, Spring Cloud, Spring Batch,
+              Spring Data JPA, Hibernate/JPA, Spring Cloud, Spring Batch,
               microservices, REST APIs, SOAP, Node.js, Express.js
             </p>
           </div>
@@ -743,8 +765,9 @@
             <h3>Cloud &amp; Containers</h3>
             <p>
               Azure AKS, Azure Functions, Key Vault, Application Insights;
-              AWS EC2, ECS/EKS, S3, Lambda, RDS, API Gateway, CloudWatch,
-              VPC, IAM, CloudFront; PCF, Docker, Kubernetes, Helm
+              AWS EC2, ECS/EKS, S3, Lambda, RDS, API Gateway,
+              CloudWatch, VPC, IAM, CloudFront; PCF, Docker,
+              Kubernetes, Helm
             </p>
           </div>
 
@@ -758,7 +781,7 @@
           </div>
 
           <div class="card">
-            <h3>Databases</h3>
+            <h3>Databases &amp; Caching</h3>
             <p>
               PostgreSQL, Oracle, MySQL, SQL Server,
               MongoDB, DynamoDB, Redis
@@ -784,11 +807,47 @@
           </div>
 
           <div class="card">
-            <h3>Security &amp; AI Development</h3>
+            <h3>Security</h3>
             <p>
-              OAuth 2.0, OIDC, JWT, SAML, RBAC, secure API practices,
-              PCI-DSS/PII-aware delivery, GitHub Copilot;
-              React 19, FastAPI, and multi-agent integration in ClaimAI
+              OAuth 2.0, OIDC, JWT, SAML, RBAC,
+              secure API practices, PCI-DSS/PII-aware delivery
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>AI Engineering</h3>
+            <p>
+              OpenAI APIs, agentic AI, LangGraph, LangChain,
+              multi-agent orchestration, MCP server development,
+              internal chatbot and workflow automation
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="learning-label">Familiarity &amp; Learning</span>
+            <h3>AI Tooling</h3>
+            <p>
+              Spring AI, LangChain4j, OpenAI function calling
+              and structured outputs, MCP Java SDK, MCP Inspector
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="learning-label">Concepts &amp; Learning</span>
+            <h3>RAG &amp; Vector Search</h3>
+            <p>
+              Document ingestion and chunking, embeddings,
+              semantic retrieval, pgvector, Pinecone,
+              Azure AI Search, Chroma
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="learning-label">Concepts &amp; Learning</span>
+            <h3>Agent Evaluation</h3>
+            <p>
+              LangSmith, OpenTelemetry, RAGAS, prompt evaluation,
+              token usage, caching, rate limits, latency monitoring
             </p>
           </div>
         </div>
@@ -802,12 +861,15 @@
         <h2>Enterprise application delivery</h2>
 
         <div class="experience-list">
+          <!-- Navy Federal -->
           <article class="experience-card">
             <div class="experience-heading">
               <div>
                 <h3>Navy Federal Credit Union</h3>
                 <p class="role">Senior Full Stack Developer</p>
-                <p class="location">Vienna, VA</p>
+                <p class="work-mode">
+                  Hybrid initially, then work from home
+                </p>
               </div>
 
               <p class="dates">Apr 2021 – Present</p>
@@ -823,127 +885,181 @@
                 dispute questionnaires, multi-dispute workflows,
                 validation, status tracking, and alerts.
               </li>
+
               <li>
                 Develop Spring Boot microservices and REST APIs for
                 claim creation, business validation, dispute status,
                 and downstream banking integrations.
               </li>
+
               <li>
                 Work with PostgreSQL queries, Redis-backed flows,
                 claims batch processing, and documentation-generation
                 workflows.
               </li>
+
               <li>
                 Contribute to MuleSoft API integrations and DataWeave
-                transformations; troubleshoot connectivity, payload,
-                and integration issues.
+                transformations; troubleshoot connectivity,
+                payload, and integration issues.
               </li>
+
               <li>
-                Work with RabbitMQ/Kafka and Azure Functions to support
-                asynchronous processing and investigate retries and
-                downstream behavior.
+                Work with RabbitMQ/Kafka and Azure Functions
+                to support asynchronous processing and investigate
+                retries and downstream service behavior.
               </li>
+
               <li>
                 Support PCF/Tanzu-to-Azure AKS migration with Docker,
-                Helm/Kubernetes configuration, Azure DevOps pipelines,
-                and release validation.
+                Helm/Kubernetes deployment configuration,
+                Azure DevOps pipelines, and release validation.
               </li>
+
               <li>
-                Contribute to chatbot and workflow-automation efforts,
-                analyze defects across application layers, and maintain
-                technical designs and operational runbooks.
+                Developed an internal agentic AI assistant using
+                OpenAI APIs, LangGraph, and LangChain for claims/fraud
+                knowledge and workflow automation.
+              </li>
+
+              <li>
+                Designed and developed MCP servers and tool integrations
+                connecting AI agents with Java/Spring capabilities
+                and enterprise APIs.
+              </li>
+
+              <li>
+                Mentor developers through code reviews,
+                implementation guidance, troubleshooting,
+                and knowledge sharing.
               </li>
             </ul>
           </article>
 
+          <!-- Little Caesars -->
           <article class="experience-card">
             <div class="experience-heading">
               <div>
                 <h3>Little Caesars</h3>
                 <p class="role">Full Stack Developer</p>
-                <p class="location">Detroit, MI</p>
+                <p class="work-mode">
+                  Detroit, MI · In office initially, then work from home
+                </p>
               </div>
 
               <p class="dates">Sep 2020 – Mar 2021</p>
             </div>
 
             <p class="project-name">
-              Digital Ordering and Web Experiences
+              eCommerce Website, Digital Ordering &amp; Billing
             </p>
 
             <ul class="details">
               <li>
-                Built responsive React/Gatsby pages and digital-ordering
-                experiences using reusable components and
-                JavaScript/TypeScript.
+                Built responsive React/Gatsby ecommerce pages
+                and digital-ordering experiences using reusable
+                components and JavaScript/TypeScript.
               </li>
+
               <li>
-                Created and documented components with Storybook,
-                Styled Components, and MDX; used Git, Yarn, and Lerna.
+                Used React Hooks for component state and effects
+                and Redux for shared application state.
               </li>
+
               <li>
-                Contributed Java/Spring Boot backend functionality and
-                integrated GraphQL and REST endpoints with ordering views.
+                Created and documented frontend components using
+                Storybook, Styled Components, and MDX;
+                used Git, Yarn, and Lerna.
               </li>
+
               <li>
-                Worked with PostgreSQL and Redis-backed data flows;
-                tested changes using Jest, React Testing Library,
+                Contributed Java/Spring Boot controllers and backend
+                functionality and integrated GraphQL and REST endpoints
+                with ordering and billing views.
+              </li>
+
+              <li>
+                Supported payment/transaction functionality,
+                PostgreSQL queries, and Redis-backed application flows.
+              </li>
+
+              <li>
+                Tested changes using Jest, React Testing Library,
                 Cypress, JUnit, and Mockito.
               </li>
+
               <li>
-                Supported AWS delivery and release workflows using
-                EC2, ECS, S3, CloudFront, RDS, Lambda, and CloudWatch.
+                Participated in AWS deployments, release validation,
+                troubleshooting, pull requests, and code reviews.
               </li>
             </ul>
           </article>
 
+          <!-- American Express -->
           <article class="experience-card">
             <div class="experience-heading">
               <div>
                 <h3>American Express</h3>
                 <p class="role">Full Stack Developer</p>
-                <p class="location">New York, NY</p>
+                <p class="work-mode">In office</p>
               </div>
 
               <p class="dates">May 2018 – Aug 2020</p>
             </div>
 
-            <p class="project-name">Credit Card Applications</p>
+            <p class="project-name">
+              Credit Card Website &amp; Application
+            </p>
 
             <ul class="details">
               <li>
-                Contributed to Angular-to-React/TypeScript migration
-                for credit-card workflows and developed reusable components.
+                Built customer-facing credit-card website features
+                using React, TypeScript, and Redux across account,
+                transaction, statement, payment, and dispute views.
               </li>
+
               <li>
-                Developed views for accounts, transactions, statements,
-                payments, alerts, and disputes, including validation
-                and error states.
+                Created reusable components and integrated UI workflows
+                with Spring Boot REST APIs, including validation,
+                asynchronous data handling, and error states.
               </li>
+
               <li>
-                Built Java/Spring Boot REST services and a
-                Node.js/Express backend-for-frontend layer to aggregate
-                service data.
+                Built Java/Spring Boot services and a Node.js/Express
+                backend-for-frontend layer to aggregate service data.
               </li>
+
               <li>
-                Supported Kafka event processing, PostgreSQL-backed
-                features, and AWS components including EC2, ECS/EKS,
-                S3, Lambda, RDS, API Gateway, and CloudWatch.
+                Supported English- and Chinese-language website
+                experiences and tested changes across E1, E2,
+                and E3 environments.
               </li>
+
               <li>
-                Implemented and supported Spring Security, OAuth 2.0,
-                and JWT; participated in testing, Jenkins/AWS CodePipeline
-                releases, and production troubleshooting.
+                Worked with PostgreSQL-backed features, Kafka event
+                flows, and AWS-hosted application components.
+              </li>
+
+              <li>
+                Supported secure API integration using Spring Security,
+                OAuth 2.0, and JWT.
+              </li>
+
+              <li>
+                Participated in Git merges, Jenkins/AWS CodePipeline
+                releases, regression testing, deployment verification,
+                and CloudWatch troubleshooting.
               </li>
             </ul>
           </article>
 
+          <!-- Cox -->
           <article class="experience-card">
             <div class="experience-heading">
               <div>
                 <h3>Cox Communications</h3>
                 <p class="role">Full Stack Developer</p>
-                <p class="location">Hyderabad, India</p>
+                <p class="work-mode">Hyderabad, India · In office</p>
               </div>
 
               <p class="dates">Jun 2013 – Dec 2015</p>
@@ -959,19 +1075,23 @@
                 billing, account management, and customer-service
                 workflows using HTML and CSS.
               </li>
+
               <li>
-                Implemented Spring MVC controller, service, and
-                data-access functionality and maintained REST integrations.
+                Implemented Spring MVC controller, service,
+                and data-access functionality and maintained
+                REST integrations.
               </li>
+
               <li>
                 Wrote SQL/PL-SQL queries and traced defects across
-                AngularJS screens, Java services, REST APIs,
+                browser screens, Java services, REST APIs,
                 and relational data.
               </li>
+
               <li>
-                Participated in Jenkins build/release activities and
-                automated UI testing with Selenium, Jasmine, Karma,
-                and Protractor.
+                Participated in Jenkins build/release activities
+                and UI testing using Selenium, Jasmine,
+                Karma, and Protractor.
               </li>
             </ul>
           </article>
@@ -986,8 +1106,8 @@
         <h2>Featured project</h2>
 
         <p class="section-intro">
-          Explore my full-stack project through the live frontend
-          and dedicated frontend, backend, and AI service repositories.
+          Explore ClaimAI through the live frontend demonstration
+          and its dedicated frontend, backend, and AI service repositories.
         </p>
 
         <article class="project-card">
@@ -1000,20 +1120,27 @@
           </p>
 
           <p class="project-description">
-            A polyglot full-stack demonstration project built to showcase
-            senior full-stack development skills. ClaimAI combines a
-            React interface, a Java Spring Boot backend, and a Python
-            FastAPI service with four specialized AI agents.
+            A full-stack demonstration project combining a React
+            frontend, Java Spring Boot backend, and Python FastAPI
+            service with four specialized agents: Intake, Fraud,
+            Policy, and Validation.
+          </p>
+
+          <p class="project-description">
+            The project demonstrates a claim-submission workflow
+            where the backend coordinates processing and the frontend
+            presents the results. I built it to demonstrate how I
+            connect a user interface, backend APIs, and an AI service
+            in one application.
           </p>
 
           <div class="tags" aria-label="ClaimAI technologies">
             <span class="tag">React 19 &amp; Hooks</span>
             <span class="tag">Tailwind CSS</span>
             <span class="tag">Java 17</span>
-            <span class="tag">Spring Boot</span>
+            <span class="tag">Spring Boot 3</span>
             <span class="tag">Python</span>
             <span class="tag">FastAPI</span>
-            <span class="tag">JavaScript / TypeScript</span>
             <span class="tag">Docker Compose</span>
             <span class="tag">GitHub Pages</span>
           </div>
@@ -1024,24 +1151,24 @@
             <div class="architecture-item">
               <h4>React Frontend</h4>
               <p>
-                React 19, Hooks, and Tailwind CSS provide the user
-                interface and live demo.
+                React 19, Hooks, and Tailwind CSS provide
+                the responsive user interface and live demo.
               </p>
             </div>
 
             <div class="architecture-item">
               <h4>Java Backend</h4>
               <p>
-                Java 17 and Spring Boot provide the main backend API
-                and orchestrate application and AI service interactions.
+                Java 17 and Spring Boot provide the main API,
+                layered application structure, and orchestration.
               </p>
             </div>
 
             <div class="architecture-item">
               <h4>Python AI Service</h4>
               <p>
-                Python and FastAPI implement the multi-agent AI layer
-                with four specialized agents.
+                Python and FastAPI implement the multi-agent
+                processing layer.
               </p>
             </div>
           </div>
@@ -1053,7 +1180,7 @@
               rel="noopener noreferrer"
               class="button button-primary"
             >
-              View Live Demo ↗
+              Launch Live Demo ↗
             </a>
 
             <a
@@ -1140,8 +1267,9 @@
         <h2>Let’s build something together</h2>
 
         <p class="contact-description">
-          Open to Senior Full Stack Developer and Backend Developer
-          opportunities in banking, healthcare insurance, and ecommerce.
+          Based in Livonia, Michigan. Open to Senior Full Stack Developer
+          and Backend Developer opportunities, including banking,
+          healthcare insurance, and ecommerce.
         </p>
 
         <div class="actions">
@@ -1153,12 +1281,20 @@
           </a>
 
           <a
-            href="Apurupa_Resume.pdf"
+            href="Apurupa_Resume.docx"
+            download
+            class="button"
+          >
+            Download Resume
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/rupa-p-75b502178/"
             target="_blank"
             rel="noopener noreferrer"
             class="button"
           >
-            View Resume
+            LinkedIn ↗
           </a>
 
           <a
@@ -1167,7 +1303,7 @@
             rel="noopener noreferrer"
             class="button"
           >
-            GitHub Profile ↗
+            GitHub ↗
           </a>
         </div>
 
@@ -1175,6 +1311,7 @@
           <a href="mailto:apurupa810@gmail.com">
             apurupa810@gmail.com
           </a>
+
           <a href="tel:+17342787599">
             734-278-7599
           </a>
